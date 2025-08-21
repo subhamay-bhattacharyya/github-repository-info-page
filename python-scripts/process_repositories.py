@@ -131,6 +131,7 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     cloudformation_repos = []
     terraform_repos = []
     currently_working_repos = []
+    all_topics = []
 
     for repo in repositories:
         repo_info = {
@@ -139,6 +140,10 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             "url": repo.get("html_url"),
             "topics": repo.get("topics", []),
         }
+        for topic in repo_info["topics"]:
+            if topic not in all_topics:
+                all_topics.append(topic)
+
         if debug:
             print(f"Processed repository: {repo_info['name']}")
             if "cloudformation" in repo_info["topics"]:
@@ -161,6 +166,8 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         print(f"Terraform Repo: {repo['name']} - {repo['url']}")
     for repo in currently_working_repos[0:10]:
         print(f"Currently Working Repo: {repo['name']} - {repo['url']}")
+
+    print(f"All Topics: {all_topics}")
 
     return cloudformation_repos, terraform_repos, currently_working_repos
 
