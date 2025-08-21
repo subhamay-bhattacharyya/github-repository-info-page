@@ -101,7 +101,6 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     cloudformation_repos = []
     terraform_repos = []
     currently_working_repos = []
-    redundant_topics = ['in-progress', 'repository-template', 'terraform', 'chatgpt', 'cloudformation', 'github-codespace', 'github-copilot', 'openai', 'auto-created']
     all_topics = []
 
 
@@ -120,9 +119,15 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
 
         repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url","status"]}
         if "cloudformation" in repo_info["topics"]:
-            cloudformation_repos.append({repo_info["category"]: repo_detail})
+            if cloudformation_repos.get(repo_info["category"]) is None:
+                cloudformation_repos.append({repo_info["category"]: list(repo_detail)})
+            else:
+                cloudformation_repos[repo_info["category"]].extend(list(repo_detail))
         elif "terraform" in repo_info["topics"]:
-            terraform_repos.append({repo_info["category"]: repo_detail})
+            if terraform_repos.get(repo_info["category"]) is None:
+                terraform_repos.append({repo_info["category"]: list(repo_detail)})
+            else:
+                terraform_repos[repo_info["category"]].extend(list(repo_detail))
 
         elif "in-progress" in repo_info["topics"]:
             repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url"]}
