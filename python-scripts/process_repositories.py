@@ -7,21 +7,6 @@ from typing import Dict, Any, List, Tuple
 from collections import Counter
 import requests
 
-# def load_json(path: Path) -> List[Dict[str, Any]]:
-#     """
-#     Load a JSON file from the given path and return its contents as a list of dictionaries.
-#     Raises an error and exits if the file cannot be read or does not contain a list.
-#     """
-#     try:
-#         with path.open("r", encoding="utf-8") as f:
-#             data = json.load(f)
-#         if not isinstance(data, list):
-#             raise ValueError("Input JSON must be a list of gist items.")
-#         return data
-#     except (OSError, json.JSONDecodeError) as e:
-#         print(f"❌ Failed to read JSON from {path}: {e}", file=sys.stderr)
-#         sys.exit(1)
-
 
 def parse_args():
 
@@ -50,27 +35,12 @@ def parse_args():
         help="GitHub organization name."
     )
     parser.add_argument(
-        "--output",
-        help="Path to the output JSON file."
-    )
-    parser.add_argument(
         "--debug",
         action="store_true",
         help="Enable debug output."
     )
     return parser.parse_args()
 
-# def generate_repositories_json(repositories):
-#     # Create a list to hold the repository information
-#     repo_list = []
-
-#     # Iterate through the repositories and extract the relevant information
-#     try:
-#         with all_gists_path.open("r", encoding="utf-8") as f:
-#             gists = json.load(f)
-#     except (OSError, json.JSONDecodeError) as e:
-#         print(f"Failed to read {all_gists_path}: {e}", file=sys.stderr)
-#         return
     
 def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
     """
@@ -131,13 +101,9 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     cloudformation_repos = []
     terraform_repos = []
     currently_working_repos = []
+    redundant_topics = ['in-progress', 'repository-template', 'terraform', 'chatgpt', 'cloudformation', 'github-codespace', 'github-copilot', 'openai', 'auto-created']
     all_topics = []
-    redundant_topics = [ 'container', 'not-started', 'bedrock', 'step-function', 'vpc-networking', 'kubernetes', 
-                        'highly-available', 'event-bridge', 'tagging', 'elastic-map-reduce', 'glue', 
-                        'redshift', 'generative-ai', 'security-compliance', 'migration', 'foundation', 
-                        'api-gateway', 'athena', 'data-lake', 'disaster-recovery', 'sagemaker', 
-                        'aws-power-tools', 'serverless-patterns', 'data-engineering', 'serverless', 
-                        'general', 'data-protection', 'storage' ]
+
 
     for repo in repositories:
         repo_info = {
@@ -145,25 +111,22 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             "description": repo.get("description"),
             "url": repo.get("html_url"),
             "topics": repo.get("topics", []),
+            "category": repo.get("custom_properties", {}).get("ProjectCategory", "No Category"),
+            "status": "in-progress" if "in-progress" in repo.get("topics", []) else "completed",
         }
         for topic in repo_info["topics"]:
             if topic not in all_topics:
                 all_topics.append(topic)
-            all_topics.remove(redundant_topics)
 
-        if debug:
-            if "cloudformation" in repo_info["topics"]:
-                category = "cloudformation"
-                repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
-                cloudformation_repos.append({category: repo_info_no_topics})
-            elif "terraform" in repo_info["topics"]:
-                category = set(all_topics) & set(repo_info["topics"])
-                repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
-                terraform_repos.append({category: repo_info_no_topics})
+        repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url","status"]}
+        if "cloudformation" in repo_info["topics"]:
+            cloudformation_repos.append({repo_info["category"]: repo_detail})
+        elif "terraform" in repo_info["topics"]:
+            terraform_repos.append({repo_info["category"]: repo_detail})
 
-            elif "in-progress" in repo_info["topics"]:
-                repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
-                currently_working_repos.append({"in-progress": repo_info_no_topics})
+        elif "in-progress" in repo_info["topics"]:
+            repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url"]}
+            currently_working_repos.append({"in-progress": repo_detail})
 
     if debug:
         print(f"Total processed repositories: {len(cloudformation_repos) + len(terraform_repos) + len(currently_working_repos)}")
@@ -191,15 +154,13 @@ def main():
     """
     args = parse_args()
 
-    output_path = args.output
     debug = getattr(args, "debug", False)
     debug = args.debug
 
 
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")
-        print(f"Organization    => {args.org}")
-        print(f"Output file    => {output_path}")
+        print(f"Organization   => {args.org}")
         print(f"Debug          => {args.debug}")
 
         print("---------------------------------------------------------")
@@ -216,31 +177,6 @@ def main():
 
     print("Currently Working Repos:")
     print(json.dumps(currently_working_repos[0:10], indent=2))
-
-
-    # if not os.path.isfile(input_path):
-    #     print(f"Input file '{input_path}' does not exist.", file=sys.stderr)
-    #     sys.exit(1)
-
-    # try:
-    #     input_path = Path(args.input).expanduser().resolve()
-    #     output_path = (
-    #         Path(args.output).expanduser().resolve() if args.output else input_path
-    #     )
-    #     items = load_json(input_path)
-
-    # except (OSError, json.JSONDecodeError) as e:
-    #     print(f"Failed to load input JSON: {e}", file=sys.stderr)
-    #     sys.exit(1)
-
-    # try:
-    #     if not isinstance(items, list):
-    #         raise ValueError("Input JSON must be an array of items.")
-    # except ValueError as e:
-    #     print(str(e), file=sys.stderr)
-    #     sys.exit(1)
-
-    # session = requests.Session()
 
 if __name__ == "__main__":
     main()
