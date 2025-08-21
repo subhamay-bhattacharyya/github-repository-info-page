@@ -48,7 +48,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
         working-directory: ${{ github.workspace }}/python-scripts
         run: |
-            python process-repositories.py \
+            python process_repositories.py \
             --org "${{ github.repository_owner }}" \
             ${{ inputs.output_path != '' && format('--output "{0}"', inputs.output_path) || '' }} \
             ${{ inputs.debug && '--debug' || '' }}
