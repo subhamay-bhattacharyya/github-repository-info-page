@@ -187,7 +187,7 @@ def main():
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")
         print(f"Organization   => {args.org}")
-        print(f"Output Path    => {output_path}")
+        print(f"Output Path    => {output_dir}")
         print(f"Debug          => {args.debug}")
         print("---------------------------------------------------------")
 

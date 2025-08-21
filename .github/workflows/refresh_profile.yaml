@@ -45,9 +45,9 @@ jobs:
       - name: Execute Python script (process_repositories.py)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
-        working-directory: ${{ github.workspace }}/python-scripts
+        working-directory: ${{ github.workspace }}
         run: |
-            python process_repositories.py \
+            python python-scripts/process_repositories.py \
             --org "${{ github.repository_owner }}" \
             --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
