@@ -140,23 +140,23 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         print(f"Terraform Repositories: {num_terraform_repos}")
         print(f"Currently Working Repositories: {len(currently_working_repos)}")
 
-    print("CloudFormation Repositories:")
-    for key, value in cloudformation_repos.items():
-        print(f"{key}: {len(value)} repositories")
-        for i, repo in enumerate(value):
-            print(f"{i+1}  - {repo}")
+    # print("CloudFormation Repositories:")
+    # for key, value in cloudformation_repos.items():
+    #     print(f"{key}: {len(value)} repositories")
+    #     for i, repo in enumerate(value):
+    #         print(f"{i+1}  - {repo}")
 
-    print("----------------------------------------")
-    print("Terraform Repositories:")
-    for key, value in terraform_repos.items():
-        print(f"{key}: {len(value)} repositories")
-        for i, repo in enumerate(value):
-            print(f"{i + 1}. {repo}")
-    print("----------------------------------------")
-    print("Currently Working Repositories:")
-    for i, repo in enumerate(currently_working_repos):
-        print(f"{i + 1}. {repo}")
-    print("----------------------------------------")
+    # print("----------------------------------------")
+    # print("Terraform Repositories:")
+    # for key, value in terraform_repos.items():
+    #     print(f"{key}: {len(value)} repositories")
+    #     for i, repo in enumerate(value):
+    #         print(f"{i + 1}. {repo}")
+    # print("----------------------------------------")
+    # print("Currently Working Repositories:")
+    # for i, repo in enumerate(currently_working_repos):
+    #     print(f"{i + 1}. {repo}")
+    # print("----------------------------------------")
 
     return cloudformation_repos, terraform_repos, currently_working_repos
 
@@ -177,14 +177,9 @@ def main():
         print(f"Output directory '{output_dir}' does not exist.", file=sys.stderr)
         sys.exit(1)
     try:
-        cloudformation_repo_path = Path(output_dir) / "cloudformation_repos.json"
-        cloudformation_repo_path = cloudformation_repo_path.expanduser().resolve()
-        terraform_repo_path = Path(output_dir) / "terraform_repos.json"
-        terraform_repo_path = terraform_repo_path.expanduser().resolve()
-        currently_working_repos_repo_path = Path(output_dir) / "currently_working_repos.json"
-        currently_working_repos_repo_path = currently_working_repos_repo_path.expanduser().resolve()
-        terraform_repo_path = Path("terraform_repos.json").expanduser().resolve()
-        currently_working_repos_repo_path = Path("currently_working_repos.json").expanduser().resolve()
+        cloudformation_repo_path = Path(output_dir).expanduser().resolve() / "cloudformation_repos.json"
+        terraform_repo_path = Path(output_dir).expanduser().resolve() / "terraform_repos.json"
+        currently_working_repos_repo_path = Path(output_dir).expanduser().resolve() / "currently_working_repos.json"
     except (OSError, json.JSONDecodeError) as e:
         print(f"Failed to load input JSON: {e}", file=sys.stderr)
         sys.exit(1)
