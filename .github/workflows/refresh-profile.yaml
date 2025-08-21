@@ -1,0 +1,56 @@
+name: Refresh GitHub Profile
+run-name: Refresh GitHub Profile run by ${{ github.actor }} on ${{ github.ref_name }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      output_path:
+        description: 'Path to the output JSON file (optional)'
+        required: false
+        default: 'all-repositories.json'
+        type: string
+      debug:
+        description: 'Enable debug output'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  refresh-profile:
+    name: Refresh GitHub Profile
+    runs-on: ubuntu-latest
+
+    # Prevent overlapping runs of THIS workflow on the same branch
+    concurrency:
+      group: refresh-profile-${{ github.ref }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Python script (maintain_gists.py)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
+        working-directory: ${{ github.workspace }}/gist-factory
+        run: |
+          python maintain_gists.py \
+            --input "${{ inputs.input_path }}" \
+            ${{ inputs.output_path && format('--output "{0}"', inputs.output_path) || '' }} \
+            ${{ inputs.skip_existing && '--skip-existing' || '' }} \
+            ${{ inputs.dry_run && '--dry-run' || '' }} \
+            ${{ inputs.debug && '--debug' || '' }}
