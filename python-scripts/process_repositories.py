@@ -135,9 +135,18 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         print(f"Terraform Repositories: {num_terraform_repos}")
         print(f"Currently Working Repositories: {len(currently_working_repos)}")
 
-    print(f"CloudFormation Repo: {cloudformation_repos}")
-    print(f"Terraform Repo: {terraform_repos}")
-    print(f"Currently Working Repo: {currently_working_repos}")
+    print("CloudFormation Repositories:")
+    for i, repo in enumerate(cloudformation_repos.values()):
+        print(f"{i + 1}. {repo}")
+    print("----------------------------------------")
+    print("Terraform Repositories:")
+    for i, repo in enumerate(terraform_repos.values()):
+        print(f"{i + 1}. {repo}")
+    print("----------------------------------------")
+    print("Currently Working Repositories:")
+    for i, repo in enumerate(currently_working_repos):
+        print(f"{i + 1}. {repo}")
+    print("----------------------------------------")
 
     return cloudformation_repos, terraform_repos, currently_working_repos
 
