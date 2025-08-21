@@ -49,11 +49,11 @@ jobs:
         run: |
             python process_repositories.py \
             --org "${{ github.repository_owner }}" \
-            --output-dir "${{ inputs.output-path }}" \
+            --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
 
       - name: Print the output files
-        working-directory: ${{ github.workspace }}/${{ inputs.output-path }}
+        working-directory: ${{ github.workspace }}/${{ inputs.output-dir }}
         shell: bash
         run: |
           echo "Output files:"
