@@ -134,10 +134,10 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
 
         # Sort the elements of the lists
         for key, val in cloudformation_repos.items():
-            cloudformation_repos[key] = sorted(val, key=lambda x: int(x["name"][:4]))
+            cloudformation_repos[key] = sorted(val, key=lambda x: int(x["name"][:3]))
 
         for key, val in terraform_repos.items():
-            terraform_repos[key] = sorted(val, key=lambda x: int(x["name"][:4]))
+            terraform_repos[key] = sorted(val, key=lambda x: int(x["name"][:3]))
 
 
     if debug:
