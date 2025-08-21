@@ -171,8 +171,9 @@ def main():
     debug = args.debug
     output_path = args.output_path
 
-    if not os.path.isdir(output_path):
-        print(f"Output directory '{output_path}' does not exist.", file=sys.stderr)
+    output_dir = os.path.dirname(output_path) or "."
+    if not os.path.isdir(output_dir):
+        print(f"Output directory '{output_dir}' does not exist.", file=sys.stderr)
         sys.exit(1)
     try:
         cloudformation_repo_path = Path("cloudformation_repos.json").expanduser().resolve()
