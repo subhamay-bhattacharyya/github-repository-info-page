@@ -195,9 +195,17 @@ def main():
         print("---------------------------------------------------------")
 
     repositories = get_all_repositories(args.org, debug=debug)
-    print(json.dumps(repositories[0:10], indent=2))
 
     cloudformation_repos, terraform_repos, currently_working_repos = process_repositories(repositories, debug=debug)
+
+    print("Cloudformation Repos:")
+    print(json.dumps(cloudformation_repos[0:10], indent=2))
+
+    print("Terraform Repos:")
+    print(json.dumps(terraform_repos[0:10], indent=2))
+
+    print("Currently Working Repos:")
+    print(json.dumps(currently_working_repos[0:10], indent=2))
 
 
     # if not os.path.isfile(input_path):
