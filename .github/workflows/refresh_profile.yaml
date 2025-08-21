@@ -46,11 +46,9 @@ jobs:
       - name: Execute Python script (maintain_gists.py)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
-        working-directory: ${{ github.workspace }}/gist-factory
+        working-directory: ${{ github.workspace }}/python-scripts
         run: |
-          python maintain_gists.py \
-            --input "${{ inputs.input_path }}" \
-            ${{ inputs.output_path && format('--output "{0}"', inputs.output_path) || '' }} \
-            ${{ inputs.skip_existing && '--skip-existing' || '' }} \
-            ${{ inputs.dry_run && '--dry-run' || '' }} \
+            python process-repositories.py \
+            --org "${{ github.repository_owner }}" \
+            ${{ inputs.output_path != '' && format('--output "{0}"', inputs.output_path) || '' }} \
             ${{ inputs.debug && '--debug' || '' }}
