@@ -112,6 +112,53 @@ def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
         print(f"❌ Exception occurred while fetching repositories: {e}", file=sys.stderr)
         return []
 
+def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False) -> List[Dict[str, Any]]:
+    """
+    Process a list of repository dictionaries and return processed information.
+
+    Args:
+        repositories (List[Dict[str, Any]]): List of repository data dictionaries.
+        debug (bool): Enable debug output.
+
+    Returns:
+        List[Dict[str, Any]]: List of processed repository information.
+    """
+    cloudformation_repos = []
+    terraform_repos = []
+    currently_working_repos = []
+
+    for repo in repositories:
+        repo_info = {
+            "name": repo.get("name"),
+            "description": repo.get("description"),
+            "url": repo.get("html_url"),
+            "topics": repo.get("topics", []),
+        }
+        if debug:
+            print(f"Processed repository: {repo_info['name']}")
+            if "cloudformation" in repo_info["topics"]:
+                cloudformation_repos.append(repo_info)
+            elif "terraform" in repo_info["topics"]:
+                terraform_repos.append(repo_info)
+
+            elif "in-progress" in repo_info["topics"]:
+                currently_working_repos.append(repo_info)
+
+    if debug:
+        print(f"Total processed repositories: {len(cloudformation_repos) + len(terraform_repos) + len(currently_working_repos)}")
+        print(f"CloudFormation Repositories: {len(cloudformation_repos)}")
+        print(f"Terraform Repositories: {len(terraform_repos)}")
+        print(f"Currently Working Repositories: {len(currently_working_repos)}")
+
+    for repo in cloudformation_repos[0:10]:
+        print(f"CloudFormation Repo: {repo['name']} - {repo['url']}")
+    for repo in terraform_repos[0:10]:
+        print(f"Terraform Repo: {repo['name']} - {repo['url']}")
+    for repo in currently_working_repos[0:10]:
+        print(f"Currently Working Repo: {repo['name']} - {repo['url']}")
+
+    return cloudformation_repos, terraform_repos, currently_working_repos
+
 def main():
     """
     Main entry point for processing repositories.
@@ -144,6 +191,9 @@ def main():
 
     repositories = get_all_repositories(args.org, debug=debug)
     print(json.dumps(repositories[0:10], indent=2))
+
+    cloudformation_repos, terraform_repos, currently_working_repos = process_repositories(repositories, debug=debug)
+
 
     # if not os.path.isfile(input_path):
     #     print(f"Input file '{input_path}' does not exist.", file=sys.stderr)
