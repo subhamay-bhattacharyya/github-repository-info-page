@@ -171,11 +171,10 @@ def main():
     debug = args.debug
     output_path = args.output_path
 
-    if not os.path.isfile(output_path):
-        print(f"Output file '{output_path}' does not exist.", file=sys.stderr)
+    if not os.path.isdir(output_path):
+        print(f"Output directory '{output_path}' does not exist.", file=sys.stderr)
         sys.exit(1)
     try:
-        output_path = Path(args.output_path).expanduser().resolve()
         cloudformation_repo_path = Path("cloudformation_repos.json").expanduser().resolve()
         terraform_repo_path = Path("terraform_repos.json").expanduser().resolve()
         currently_working_repos_repo_path = Path("currently_working_repos.json").expanduser().resolve()
