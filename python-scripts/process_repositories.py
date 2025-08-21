@@ -132,6 +132,12 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     terraform_repos = []
     currently_working_repos = []
     all_topics = []
+    redundant_topics = [ 'container', 'not-started', 'bedrock', 'step-function', 'vpc-networking', 'kubernetes', 
+                        'highly-available', 'event-bridge', 'tagging', 'elastic-map-reduce', 'glue', 
+                        'redshift', 'generative-ai', 'security-compliance', 'migration', 'foundation', 
+                        'api-gateway', 'athena', 'data-lake', 'disaster-recovery', 'sagemaker', 
+                        'aws-power-tools', 'serverless-patterns', 'data-engineering', 'serverless', 
+                        'general', 'data-protection', 'storage' ]
 
     for repo in repositories:
         repo_info = {
@@ -143,16 +149,22 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         for topic in repo_info["topics"]:
             if topic not in all_topics:
                 all_topics.append(topic)
+            all_topics.remove(redundant_topics)
 
         if debug:
             print(f"Processed repository: {repo_info['name']}")
             if "cloudformation" in repo_info["topics"]:
-                cloudformation_repos.append(repo_info)
+                category = "cloudformation"
+                repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
+                cloudformation_repos.append({category: repo_info_no_topics})
             elif "terraform" in repo_info["topics"]:
-                terraform_repos.append(repo_info)
+                category = set(all_topics) & set(repo_info["topics"])
+                repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
+                terraform_repos.append({category: repo_info_no_topics})
 
             elif "in-progress" in repo_info["topics"]:
-                currently_working_repos.append(repo_info)
+                repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
+                currently_working_repos.append({"in-progress": repo_info_no_topics})
 
     if debug:
         print(f"Total processed repositories: {len(cloudformation_repos) + len(terraform_repos) + len(currently_working_repos)}")
