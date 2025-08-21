@@ -4,10 +4,10 @@ run-name: Refresh GitHub Profile run by ${{ github.actor }} on ${{ github.ref_na
 on:
   workflow_dispatch:
     inputs:
-      output-path:
-        description: 'Path to the output file'
+      output-dir:
+        description: 'Path to the output directory'
         required: true
-        default: 'terraform-code/all-repositories'
+        default: 'terraform-code/all-repositories/'
       debug:
         description: 'Enable debug output'
         required: false

@@ -35,9 +35,9 @@ def parse_args():
         help="GitHub organization name."
     )
     parser.add_argument(
-        "--output_path",
+        "--output-dir",
         required=True,
-        help="Path to the output JSON file."
+        help="Path to the output directory."
     )
     parser.add_argument(
         "--debug",
@@ -169,9 +169,8 @@ def main():
 
     debug = getattr(args, "debug", False)
     debug = args.debug
-    output_path = args.output_path
+    output_dir = args.output_dir
 
-    output_dir = os.path.dirname(output_path) or "."
     if not os.path.isdir(output_dir):
         print(f"Output directory '{output_dir}' does not exist.", file=sys.stderr)
         sys.exit(1)
