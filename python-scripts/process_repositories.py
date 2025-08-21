@@ -132,6 +132,14 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         elif "in-progress" in repo.get("topics", []):
             currently_working_repos.append(repo_info)
 
+        # Sort the elements of the lists
+        for key, val in cloudformation_repos.items():
+            cloudformation_repos[key] = sorted(val, key=lambda x: int(x["name"][4:]))
+
+        for key, val in terraform_repos.items():
+            terraform_repos[key] = sorted(val, key=lambda x: int(x["name"][4:]))
+
+
     if debug:
         num_cloudformation_repos = sum([len(v) for v in cloudformation_repos.values()])
         num_terraform_repos = sum([len(v) for v in terraform_repos.values()])
