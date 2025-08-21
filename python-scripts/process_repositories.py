@@ -136,12 +136,17 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         print(f"Currently Working Repositories: {len(currently_working_repos)}")
 
     print("CloudFormation Repositories:")
-    for i, repo in enumerate(cloudformation_repos.values()):
-        print(f"{i + 1}. {repo}")
+    for key, value in cloudformation_repos.items():
+        print(f"{key}: {len(value)} repositories")
+        for i, repo in enumerate(value):
+            print(f"{i+1}  - {repo}")
+
     print("----------------------------------------")
     print("Terraform Repositories:")
-    for i, repo in enumerate(terraform_repos.values()):
-        print(f"{i + 1}. {repo}")
+    for key, value in terraform_repos.items():
+        print(f"{key}: {len(value)} repositories")
+        for i, repo in enumerate(value):
+            print(f"{i + 1}. {repo}")
     print("----------------------------------------")
     print("Currently Working Repositories:")
     for i, repo in enumerate(currently_working_repos):
@@ -174,14 +179,6 @@ def main():
 
     cloudformation_repos, terraform_repos, currently_working_repos = process_repositories(repositories, debug=debug)
 
-    print("Cloudformation Repos:")
-    print(json.dumps(cloudformation_repos[0:10], indent=2))
-
-    print("Terraform Repos:")
-    print(json.dumps(terraform_repos[0:10], indent=2))
-
-    print("Currently Working Repos:")
-    print(json.dumps(currently_working_repos[0:10], indent=2))
 
 if __name__ == "__main__":
     main()
