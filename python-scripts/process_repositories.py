@@ -35,6 +35,11 @@ def parse_args():
         help="GitHub organization name."
     )
     parser.add_argument(
+        "--output_path",
+        required=True,
+        help="Path to the output JSON file."
+    )
+    parser.add_argument(
         "--debug",
         action="store_true",
         help="Enable debug output."
@@ -164,19 +169,51 @@ def main():
 
     debug = getattr(args, "debug", False)
     debug = args.debug
+    output_path = args.output_path
 
+    if not os.path.isfile(output_path):
+        print(f"Output file '{output_path}' does not exist.", file=sys.stderr)
+        sys.exit(1)
+    try:
+        output_path = Path(args.output_path).expanduser().resolve()
+        cloudformation_repo_path = Path("cloudformation_repos.json").expanduser().resolve()
+        terraform_repo_path = Path("terraform_repos.json").expanduser().resolve()
+        currently_working_repos_repo_path = Path("currently_working_repos.json").expanduser().resolve()
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"Failed to load input JSON: {e}", file=sys.stderr)
+        sys.exit(1)
 
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")
         print(f"Organization   => {args.org}")
+        print(f"Output Path    => {output_path}")
         print(f"Debug          => {args.debug}")
-
         print("---------------------------------------------------------")
 
     repositories = get_all_repositories(args.org, debug=debug)
 
     cloudformation_repos, terraform_repos, currently_working_repos = process_repositories(repositories, debug=debug)
 
+    try:
+        with cloudformation_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(cloudformation_repos, f, indent=2)
+        print(f"CloudFormation Repo JSON written to {cloudformation_repo_path}")
+    except OSError as e:
+        print(f"Failed to write CloudFormation Repo JSON: {e}", file=sys.stderr)
+
+    try:
+        with terraform_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(terraform_repos, f, indent=2)
+        print(f"Terraform Repo JSON written to {terraform_repo_path}")
+    except OSError as e:
+        print(f"Failed to write Terraform Repo JSON: {e}", file=sys.stderr)
+
+    try:
+        with currently_working_repos_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(currently_working_repos, f, indent=2)
+        print(f"Currently Working Repos JSON written to {currently_working_repos_repo_path}")
+    except OSError as e:
+        print(f"Failed to write Currently Working Repos JSON: {e}", file=sys.stderr)
 
 if __name__ == "__main__":
     main()

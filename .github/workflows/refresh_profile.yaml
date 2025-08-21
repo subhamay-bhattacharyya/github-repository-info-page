@@ -4,6 +4,10 @@ run-name: Refresh GitHub Profile run by ${{ github.actor }} on ${{ github.ref_na
 on:
   workflow_dispatch:
     inputs:
+      output-path:
+        description: 'Path to the output file'
+        required: true
+        default: 'terraform-code/all-repositories'
       debug:
         description: 'Enable debug output'
         required: false
@@ -46,3 +50,11 @@ jobs:
             python process_repositories.py \
             --org "${{ github.repository_owner }}" \
             ${{ inputs.debug && '--debug' || '' }}
+
+      - name: Print the output files
+        working-directory: ${{ github.workspace }}/${{ inputs.output-path }}
+        shell: bash
+        run: |
+          echo "Output files:"
+          ls -alR
+
