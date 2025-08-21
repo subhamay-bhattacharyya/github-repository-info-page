@@ -177,7 +177,12 @@ def main():
         print(f"Output directory '{output_dir}' does not exist.", file=sys.stderr)
         sys.exit(1)
     try:
-        cloudformation_repo_path = Path("cloudformation_repos.json").expanduser().resolve()
+        cloudformation_repo_path = Path(output_dir) / "cloudformation_repos.json"
+        cloudformation_repo_path = cloudformation_repo_path.expanduser().resolve()
+        terraform_repo_path = Path(output_dir) / "terraform_repos.json"
+        terraform_repo_path = terraform_repo_path.expanduser().resolve()
+        currently_working_repos_repo_path = Path(output_dir) / "currently_working_repos.json"
+        currently_working_repos_repo_path = currently_working_repos_repo_path.expanduser().resolve()
         terraform_repo_path = Path("terraform_repos.json").expanduser().resolve()
         currently_working_repos_repo_path = Path("currently_working_repos.json").expanduser().resolve()
     except (OSError, json.JSONDecodeError) as e:
@@ -186,9 +191,12 @@ def main():
 
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")
-        print(f"Organization   => {args.org}")
-        print(f"Output Path    => {output_dir}")
-        print(f"Debug          => {args.debug}")
+        print(f"Organization                     => {args.org}")
+        print(f"Output Path                      => {output_dir}")
+        print(f"Debug                            => {args.debug}")
+        print(f"CloudFormation Repo Path         => {cloudformation_repo_path}")
+        print(f"Terraform Repo Path              => {terraform_repo_path}")
+        print(f"Currently Working Repos Path     => {currently_working_repos_repo_path}")
         print("---------------------------------------------------------")
 
     repositories = get_all_repositories(args.org, debug=debug)
