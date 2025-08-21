@@ -152,7 +152,6 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             all_topics.remove(redundant_topics)
 
         if debug:
-            print(f"Processed repository: {repo_info['name']}")
             if "cloudformation" in repo_info["topics"]:
                 category = "cloudformation"
                 repo_info_no_topics = {k: v for k, v in repo_info.items() if k != "topics"}
@@ -194,14 +193,6 @@ def main():
 
     output_path = args.output
     debug = getattr(args, "debug", False)
-
-    if debug:
-        print("---------------------------------------------------------")
-        print(f"Organization    => {args.org}")
-        print(f"Output file     => {output_path}")
-        print(f"Debug           => {debug}")
-        print("---------------------------------------------------------")
-    output_path = args.output
     debug = args.debug
 
 
