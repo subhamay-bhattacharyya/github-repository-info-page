@@ -49,6 +49,7 @@ jobs:
         run: |
             python process_repositories.py \
             --org "${{ github.repository_owner }}" \
+            --output_path "${{ inputs.output-path }}" \
             ${{ inputs.debug && '--debug' || '' }}
 
       - name: Print the output files
