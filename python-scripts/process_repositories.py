@@ -72,6 +72,46 @@ def parse_args():
 #         print(f"Failed to read {all_gists_path}: {e}", file=sys.stderr)
 #         return
     
+def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
+    """
+    Fetch all repositories for the specified GitHub organization.
+
+    Args:
+        org (str): GitHub organization name.
+        debug (bool): Enable debug output.
+
+    Returns:
+        List[Dict[str, Any]]: List of repository data dictionaries.
+    """
+    repos = []
+    session = requests.Session()
+    url = f"https://api.github.com/orgs/{org}/repos"
+    params = {"per_page": 100, "type": "all"}
+    page = 1
+
+    try:
+        while True:
+            params["page"] = page
+            if debug:
+                print(f"Fetching page {page} from {url} with params {params}")
+            response = session.get(url, params=params)
+            if response.status_code != 200:
+                print(f"❌ Failed to fetch repositories: {response.status_code} {response.text}", file=sys.stderr)
+                break
+            data = response.json()
+            if not data:
+                break
+            repos.extend(data)
+            page += 1
+
+        if debug:
+            print(f"Fetched {len(repos)} repositories from organization '{org}'.")
+
+        return repos
+    except Exception as e:
+        print(f"❌ Exception occurred while fetching repositories: {e}", file=sys.stderr)
+        return []
+
 def main():
     """
     Main entry point for processing repositories.
@@ -101,6 +141,9 @@ def main():
         print(f"Debug          => {args.debug}")
 
         print("---------------------------------------------------------")
+
+    repositories = get_all_repositories(args.org, debug=debug)
+    print(json.dumps(repositories[0:10], indent=2))
 
     # if not os.path.isfile(input_path):
     #     print(f"Input file '{input_path}' does not exist.", file=sys.stderr)
