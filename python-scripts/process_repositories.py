@@ -114,16 +114,16 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         }
 
         repo_category = repo.get("custom_properties", {}).get("ProjectCategory", "No Category")
-        if "cloudformation" in repo_info["topics"]:
+        if "cloudformation" in repo.get("topics", []):
             category_repos = cloudformation_repos.get(repo_category, [])
             category_repos.append(repo_info)
             cloudformation_repos[repo_category] = category_repos
-        if "terraform" in repo_info["topics"]:
+        if "terraform" in repo.get("topics", []):
             category_repos = terraform_repos.get(repo_category, [])
             category_repos.append(repo_info)
             terraform_repos[repo_category] = category_repos
 
-        elif "in-progress" in repo_info["topics"]:
+        elif "in-progress" in repo.get("topics", []):
             # repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url"]}
             currently_working_repos.append(repo_info)
 
