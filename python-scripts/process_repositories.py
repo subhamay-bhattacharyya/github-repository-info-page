@@ -89,6 +89,11 @@ def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
     params = {"per_page": 100, "type": "all"}
     page = 1
 
+    # Add authentication if GITHUB_TOKEN is set in environment
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if github_token:
+        session.headers.update({"Authorization": f"Bearer {github_token}"})
+
     try:
         while True:
             params["page"] = page
