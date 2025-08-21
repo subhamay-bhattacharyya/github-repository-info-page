@@ -98,10 +98,9 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     Returns:
         List[Dict[str, Any]]: List of processed repository information.
     """
-    cloudformation_repos = []
-    terraform_repos = []
+    cloudformation_repos = {}
+    terraform_repos = {}
     currently_working_repos = []
-    all_topics = []
 
 
     for repo in repositories:
@@ -109,41 +108,36 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             "name": repo.get("name"),
             "description": repo.get("description"),
             "url": repo.get("html_url"),
-            "topics": repo.get("topics", []),
-            "category": repo.get("custom_properties", {}).get("ProjectCategory", "No Category"),
+            # "topics": repo.get("topics", []),
+            # "category": repo.get("custom_properties", {}).get("ProjectCategory", "No Category"),
             "status": "in-progress" if "in-progress" in repo.get("topics", []) else "completed",
         }
-        for topic in repo_info["topics"]:
-            if topic not in all_topics:
-                all_topics.append(topic)
 
-        repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url","status"]}
+        repo_category = repo.get("custom_properties", {}).get("ProjectCategory", "No Category")
         if "cloudformation" in repo_info["topics"]:
-            if cloudformation_repos.get(repo_info["category"]) is None:
-                cloudformation_repos.append({repo_info["category"]: list(repo_detail)})
-            else:
-                cloudformation_repos[repo_info["category"]].extend(list(repo_detail))
-        elif "terraform" in repo_info["topics"]:
-            if terraform_repos.get(repo_info["category"]) is None:
-                terraform_repos.append({repo_info["category"]: list(repo_detail)})
-            else:
-                terraform_repos[repo_info["category"]].extend(list(repo_detail))
+            category_repos = cloudformation_repos.get(repo_category, [])
+            category_repos.append(repo_info)
+            cloudformation_repos[repo_category] = category_repos
+        if "terraform" in repo_info["topics"]:
+            category_repos = terraform_repos.get(repo_category, [])
+            category_repos.append(repo_info)
+            terraform_repos[repo_category] = category_repos
 
         elif "in-progress" in repo_info["topics"]:
-            repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url"]}
-            currently_working_repos.append({"in-progress": repo_detail})
+            # repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url"]}
+            currently_working_repos.append(repo_info)
 
     if debug:
-        print(f"Total processed repositories: {len(cloudformation_repos) + len(terraform_repos) + len(currently_working_repos)}")
-        print(f"CloudFormation Repositories: {len(cloudformation_repos)}")
-        print(f"Terraform Repositories: {len(terraform_repos)}")
+        num_cloudformation_repos = sum([len(v) for v in cloudformation_repos.values()])
+        num_terraform_repos = sum([len(v) for v in terraform_repos.values()])
+        print(f"Total processed repositories: {num_cloudformation_repos + num_terraform_repos + len(currently_working_repos)}")
+        print(f"CloudFormation Repositories: {num_cloudformation_repos}")
+        print(f"Terraform Repositories: {num_terraform_repos}")
         print(f"Currently Working Repositories: {len(currently_working_repos)}")
 
-    print(f"CloudFormation Repo: {cloudformation_repos[0:10]}")
-    print(f"Terraform Repo: {terraform_repos[0:10]}")
-    print(f"Currently Working Repo: {currently_working_repos[0:10]}")
-
-    print(f"All Topics: {all_topics}")
+    print(f"CloudFormation Repo: {cloudformation_repos}")
+    print(f"Terraform Repo: {terraform_repos}")
+    print(f"Currently Working Repo: {currently_working_repos}")
 
     return cloudformation_repos, terraform_repos, currently_working_repos
 
