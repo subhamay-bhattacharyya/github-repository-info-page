@@ -104,13 +104,12 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
 
 
     for repo in repositories:
+        get_status = lambda topics: next((status for status in ["in-progress", "not-started", "completed"] if status in topics), "not-started")
         repo_info = {
             "name": repo.get("name"),
             "description": repo.get("description"),
             "url": repo.get("html_url"),
-            # "topics": repo.get("topics", []),
-            # "category": repo.get("custom_properties", {}).get("ProjectCategory", "No Category"),
-            "status": "in-progress" if "in-progress" in repo.get("topics", []) else "completed",
+            "status": get_status(repo.get("topics", [])),
         }
 
         repo_category = repo.get("custom_properties", {}).get("ProjectCategory", "No Category")
@@ -124,7 +123,6 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             terraform_repos[repo_category] = category_repos
 
         elif "in-progress" in repo.get("topics", []):
-            # repo_detail = {k: v for k, v in repo_info.items() if k in ["name","description","url"]}
             currently_working_repos.append(repo_info)
 
     if debug:
