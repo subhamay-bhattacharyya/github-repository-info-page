@@ -23,37 +23,8 @@ import requests
 #         sys.exit(1)
 
 
-# def parse_args():
-#     """
-#     Parse command-line arguments for the script.
+def parse_args():
 
-#     Returns:
-#         argparse.Namespace: Parsed command-line arguments.
-#     """
-
-#     parser = argparse.ArgumentParser(
-#         description="Maintain GitHub Gists from a JSON file."
-#     )
-#     parser.add_argument("--input", required=True, help="Path to the input JSON file.")
-#     parser.add_argument(
-#         "--output", help="Path to the output JSON file (defaults to input file)."
-#     )
-#     parser.add_argument("--token", help="GitHub token or path to token file.")
-#     return parser.parse_args()
-
-# def generate_repositories_json(repositories):
-#     # Create a list to hold the repository information
-#     repo_list = []
-
-#     # Iterate through the repositories and extract the relevant information
-#     try:
-#         with all_gists_path.open("r", encoding="utf-8") as f:
-#             gists = json.load(f)
-#     except (OSError, json.JSONDecodeError) as e:
-#         print(f"Failed to read {all_gists_path}: {e}", file=sys.stderr)
-#         return
-    
-def main():
     """
     Main entry point for processing GitHub repositories from a specified organization.
 
@@ -87,12 +58,41 @@ def main():
         action="store_true",
         help="Enable debug output."
     )
+    return parser.parse_args()
 
-    args = parser.parse_args()
+# def generate_repositories_json(repositories):
+#     # Create a list to hold the repository information
+#     repo_list = []
+
+#     # Iterate through the repositories and extract the relevant information
+#     try:
+#         with all_gists_path.open("r", encoding="utf-8") as f:
+#             gists = json.load(f)
+#     except (OSError, json.JSONDecodeError) as e:
+#         print(f"Failed to read {all_gists_path}: {e}", file=sys.stderr)
+#         return
+    
+def main():
+    """
+    Main entry point for processing repositories.
+
+    Parses command-line arguments, sets up debug output, and prepares input/output paths.
+    Performs initial validation and setup for further processing of repository data.
+    """
+    args = parse_args()
+
+    output_path = args.output
+    debug = getattr(args, "debug", False)
+
+    if debug:
+        print("---------------------------------------------------------")
+        print(f"Organization    => {args.org}")
+        print(f"Output file     => {output_path}")
+        print(f"Debug           => {debug}")
+        print("---------------------------------------------------------")
     output_path = args.output
     debug = args.debug
 
-    args = parser.parse_args()
 
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")

@@ -43,7 +43,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Python script (maintain_gists.py)
+      - name: Execute Python script (process_repositories.py)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
         working-directory: ${{ github.workspace }}/python-scripts
