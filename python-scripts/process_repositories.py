@@ -119,6 +119,7 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     """
     cloudformation_repos = {}
     terraform_repos = {}
+    gha_repos = {}
     currently_working_repos = []
 
     for repo in repositories:
@@ -135,12 +136,18 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             category_repos = cloudformation_repos.get(repo_category, [])
             category_repos.append(repo_info)
             cloudformation_repos[repo_category] = category_repos
+
         if "terraform" in repo.get("topics", []):
             category_repos = terraform_repos.get(repo_category, [])
             category_repos.append(repo_info)
             terraform_repos[repo_category] = category_repos
 
-        elif "in-progress" in repo.get("topics", []):
+        if "github-action" in repo.get("topics", []):
+            category_repos = gha_repos.get(repo_category, [])
+            category_repos.append(repo_info)
+            gha_repos[repo_category] = category_repos
+
+        if "in-progress" in repo.get("topics", []):
             currently_working_repos.append(repo_info)
 
         # Sort the elements of the lists
@@ -150,16 +157,20 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         for key, val in terraform_repos.items():
             terraform_repos[key] = sorted(val, key=lambda x: x["name"])
 
+        for key, val in gha_repos.items():
+            gha_repos[key] = sorted(val, key=lambda x: x["name"])
 
     if debug:
         num_cloudformation_repos = sum([len(v) for v in cloudformation_repos.values()])
         num_terraform_repos = sum([len(v) for v in terraform_repos.values()])
-        print(f"Total processed repositories: {num_cloudformation_repos + num_terraform_repos + len(currently_working_repos)}")
-        print(f"CloudFormation Repositories: {num_cloudformation_repos}")
-        print(f"Terraform Repositories: {num_terraform_repos}")
-        print(f"Currently Working Repositories: {len(currently_working_repos)}")
+        num_gha_repos = sum([len(v) for v in gha_repos.values()])
+        print(f"Total processed repositories           : {num_cloudformation_repos + num_terraform_repos + len(currently_working_repos)}")
+        print(f"No. of CloudFormation Repositories     : {num_cloudformation_repos}")
+        print(f"No. of Terraform Repositories          : {num_terraform_repos}")
+        print(f"No. of GitHub Action Repositories      : {num_gha_repos}")
+        print(f"No. of Currently Working Repositories  : {len(currently_working_repos)}")
 
-    return cloudformation_repos, terraform_repos, currently_working_repos
+    return cloudformation_repos, terraform_repos, currently_working_repos, gha_repos
 
 def main():
     """
@@ -180,6 +191,7 @@ def main():
     try:
         cloudformation_repo_path = Path(output_dir).expanduser().resolve() / "cloudformation_repos.json"
         terraform_repo_path = Path(output_dir).expanduser().resolve() / "terraform_repos.json"
+        gha_repo_path = Path(output_dir).expanduser().resolve() / "gha_repos.json"
         currently_working_repos_repo_path = Path(output_dir).expanduser().resolve() / "currently_working_repos.json"
     except (OSError, json.JSONDecodeError) as e:
         print(f"Failed to load input JSON: {e}", file=sys.stderr)
@@ -188,16 +200,20 @@ def main():
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")
         print(f"Organization                     => {args.org}")
+        print(f"GitHub Action Organization       => {args.org}-gha")
         print(f"Output Path                      => {output_dir}")
         print(f"Debug                            => {args.debug}")
         print(f"CloudFormation Repo Path         => {cloudformation_repo_path}")
         print(f"Terraform Repo Path              => {terraform_repo_path}")
+        print(f"GitHub Action Repo Path          => {gha_repo_path}")
         print(f"Currently Working Repos Path     => {currently_working_repos_repo_path}")
         print("---------------------------------------------------------")
 
-    repositories = get_all_repositories(args.org, debug=debug)
+    project_repositories = get_all_repositories(args.org, debug=debug)
+    gha_repositories = get_all_repositories(f"{args.org}-gha", debug=debug)
+    all_repositories = project_repositories.extend(gha_repositories)
 
-    cloudformation_repos, terraform_repos, currently_working_repos = process_repositories(repositories, debug=debug)
+    cloudformation_repos, terraform_repos, currently_working_repos, gha_repos = process_repositories(all_repositories, debug=debug)
 
     try:
         with cloudformation_repo_path.open("w", encoding="utf-8") as f:
@@ -212,6 +228,13 @@ def main():
         print(f"Terraform Repo JSON written to {terraform_repo_path}")
     except OSError as e:
         print(f"Failed to write Terraform Repo JSON: {e}", file=sys.stderr)
+
+    try:
+        with gha_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(gha_repos, f, indent=2)
+        print(f"GitHub Action Repo JSON written to {gha_repo_path}")
+    except OSError as e:
+        print(f"Failed to write GitHub Action Repo JSON: {e}", file=sys.stderr)
 
     try:
         with currently_working_repos_repo_path.open("w", encoding="utf-8") as f:

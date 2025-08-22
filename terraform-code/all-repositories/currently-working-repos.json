@@ -9,6 +9,6 @@
     "name": "cloudformation-template",
     "description": "\ud83d\udcc4 \ud83c\udfaf GitHub Repository Template for CloudFormation as IaC.",
     "url": "https://github.com/subhamay-bhattacharyya/cloudformation-template",
-    "status": "https://img.shields.io/badge/-IN%20PROGRESS-6C63FF?style=flat&labelColor=00000000"
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-4CAF50?style=flat&labelColor=00000000"
   }
 ]

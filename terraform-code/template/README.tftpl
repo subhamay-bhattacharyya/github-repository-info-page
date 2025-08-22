@@ -135,17 +135,22 @@ mindmap
 ```
 
 
-## Currently Working On
+<details>
+  <summary style="background-color: #b673a7ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">Current Projects</strong></summary>
 
+  
 | Repository          | Description             | URL                                         | Status         |
 |:--------------------|:------------------------|:--------------------------------------------:|:---------------|
 %{ for repo in curr-repos ~}
 | ${repo.name}        | ${repo.description}     | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> | ![Status](${repo.status})|
 %{ endfor ~}
 
+</details>
 
 
-## CloudFormation Projects
+<details>
+  <summary style="background-color: #e27185ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">CloudFormation Projects</strong></summary>
+
 
 %{ for category_key, category_value in cfn-repos ~}
 ### ${category_key}
@@ -156,8 +161,13 @@ mindmap
 %{ endfor ~}
 %{ endfor ~}
 
+</details>
 
-## Terraform Projects
+
+
+<details>
+  <summary style="background-color: #aecceaff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">Terraform Projects</strong></summary>
+
 
 %{ for category_key, category_value in tf-repos ~}
 ### ${category_key}
@@ -168,6 +178,7 @@ mindmap
 %{ endfor ~}
 %{ endfor ~}
 
+</details>
 
 ---
 © ${date} ${name}
