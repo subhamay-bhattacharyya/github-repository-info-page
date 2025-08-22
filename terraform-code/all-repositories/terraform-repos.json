@@ -1,0 +1,114 @@
+{
+  "TemplateRepository": [
+    {
+      "name": "terraform-template",
+      "description": "📄🎯 GitHub Repository Template for Terraform as IaC.",
+      "url": "https://github.com/subhamay-bhattacharyya/terraform-template",
+      "status": "in-progress"
+    }
+  ],
+  "Bedrock": [
+    {
+      "name": "1101-bedrock-tf",
+      "description": "Text Generation with Amazon Bedrock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1101-bedrock-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1102-bedrock-tf",
+      "description": "Knowledge Bases and RAG using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1102-bedrock-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1103-bedrock-tf",
+      "description": "Model Customization using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1103-bedrock-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1104-bedrock-tf",
+      "description": "Image and Video Generation Applications using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1104-bedrock-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1105-bedrock-tf",
+      "description": "Agents using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1105-bedrock-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1701-bedrock-agent-tf",
+      "description": "Lab 1 - Create an Agent with Function Definition using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1701-bedrock-agent-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1702-bedrock-agent-tf",
+      "description": "Lab 2 - Create Agents with API Schema using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1702-bedrock-agent-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "1703-bedrock-agent-tf",
+      "description": "Lab 3 - Create Agents with Return of Control (Function Calling) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1703-bedrock-agent-tf",
+      "status": "not-started"
+      "name": "0501-data-protection-tf",
+      "description": "Module 1: S3 Versioning using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0501-data-protection-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0502-data-protection-tf",
+      "description": "Module 2: S3 Object Lock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0502-data-protection-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0503-data-protection-tf",
+      "description": "Module 3: S3 Replication using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0503-data-protection-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0504-data-protection-tf",
+      "description": "Module 4: S3 Multi-Region Access Points using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0504-data-protection-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0505-data-protection-tf",
+      "description": "Module 5: Cross-account S3 Replication and Multi-Region Access Points using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0505-data-protection-tf",
+      "status": "not-started"
+    }
+  ],
+  "Storage": [
+    {
+      "name": "0101-storage-tf",
+      "description": "S3 Security Best Practices using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0101-storage-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0102-storage-tf",
+      "description": "Storage Performance Lab using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0102-storage-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0103-storage-tf",
+      "description": "Migrating Data to AWS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0103-storage-tf",
+      "status": "not-started"
+    },
+    {
+      "name": "0104-storage-tf",
+      "description": "AWS Backup Lab using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0104-storage-tf",
+      "status": "not-started"
+    }
+  ]
+}

@@ -52,15 +52,21 @@ jobs:
             --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
 
-      - name: Print the output files
-        working-directory: ${{ github.workspace }}/${{ inputs.output-dir }}
-        shell: bash
-        run: |
-          echo "Output files:"
-          ls -alR
-          echo "======= cloudformation_repos.json ==================="
-          cat cloudformation_repos.json|jq
-          echo "======= terraform_repos.json ========================"
-          cat terraform_repos.json|jq
-          echo "======= currently_working_repos.json ================"
-          cat currently_working_repos.json|jq
+      # - name: Print the output files
+      #   working-directory: ${{ github.workspace }}/${{ inputs.output-dir }}
+      #   shell: bash
+      #   run: |
+      #     echo "Output files:"
+      #     ls -alR
+      #     echo "======= cloudformation_repos.json ==================="
+      #     cat cloudformation_repos.json|jq
+      #     echo "======= terraform_repos.json ========================"
+      #     cat terraform_repos.json|jq
+      #     echo "======= currently_working_repos.json ================"
+      #     cat currently_working_repos.json|jq
+
+      - name: Upload output files
+        uses: actions/upload-artifact@v3
+        with:
+          name: output-files
+          path: ${{ github.workspace }}/${{ inputs.output-dir }}
