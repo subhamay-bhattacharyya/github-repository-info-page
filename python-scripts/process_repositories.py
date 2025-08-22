@@ -223,10 +223,13 @@ def main():
         print("---------------------------------------------------------")
 
     project_repositories = get_all_repositories(args.org, debug=debug)
+    print(f"Type of project_repositories: {type(project_repositories)}")
     gha_repositories = get_all_repositories(f"{args.org}-gha", debug=debug)
-    all_repositories = project_repositories.extend(gha_repositories)
+    print(f"Type of gha_repositories: {type(gha_repositories)}")
+    project_repositories.extend(gha_repositories)
+    print(f"Total number of repositories: {len(project_repositories)}")
 
-    cloudformation_repos, terraform_repos, currently_working_repos, gha_repos = process_repositories(all_repositories, debug=debug)
+    cloudformation_repos, terraform_repos, currently_working_repos, gha_repos = process_repositories(project_repositories, debug=debug)
 
     try:
         with cloudformation_repo_path.open("w", encoding="utf-8") as f:
