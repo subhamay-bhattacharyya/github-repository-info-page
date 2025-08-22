@@ -127,7 +127,7 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
 
         repo_info = {
             "name": repo.get("name"),
-            "description": repo.get("description"),
+            "description": repo.get("description", ""),
             "url": repo.get("html_url"),
             "status": get_status(repo.get("topics", [])),
         }

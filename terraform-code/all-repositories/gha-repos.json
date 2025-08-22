@@ -43,12 +43,6 @@
       "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
     },
     {
-      "name": "cfn-create-stack-action-test",
-      "description": null,
-      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-create-stack-action-test",
-      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
-    },
-    {
       "name": "cfn-delete-stack-action",
       "description": "GitHub Composite Action - CloudFormation Delete Stack",
       "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-delete-stack-action",
