@@ -52,7 +52,7 @@ jobs:
             --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
 
-      - name: Upload output files
+      - name: Artifact files
         uses: actions/upload-artifact@v4
         with:
           name: output-files
@@ -62,10 +62,11 @@ jobs:
         id: validate
         uses: subhamay-bhattacharyya-gha/tf-validate-action@main
         with:
+          environment: "ci"
           terraform-dir: "terraform-code"   
           s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
           s3-region: ${{ vars.AWS_REGION }}
-          ci-pipeline: "false"
+          ci-pipeline: "true"
           soft-fail: "true"             
 
       # - name: Run TFLint
