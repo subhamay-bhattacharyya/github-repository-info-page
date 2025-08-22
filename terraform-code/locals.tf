@@ -7,16 +7,3 @@ locals {
   flat_cloudformation_repos = flatten([for repo in local.cloudformation-repos : repo])
 
 }
-
-output "cloudformation-repos" {
-  value = local.cloudformation-repos
-}
-
-
-# output "terraform-repos" {
-#   value = local.terraform-repos
-# }
-
-# output "currently-working-repos" {
-#   value = local.currently-working-repos
-# }
