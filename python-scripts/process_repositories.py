@@ -130,6 +130,7 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             "url": repo.get("html_url"),
             "status": get_status(repo.get("topics", [])),
         }
+        print(f"Processing repository: {repo_info['name']}")
 
         repo_category = repo.get("custom_properties", {}).get("ProjectCategory", "No Category")
         if "cloudformation" in repo.get("topics", []):
@@ -150,15 +151,27 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         if "in-progress" in repo.get("topics", []):
             currently_working_repos.append(repo_info)
 
-        # Sort the elements of the lists
-        for key, val in cloudformation_repos.items():
-            cloudformation_repos[key] = sorted(val, key=lambda x: x["name"])
+        if debug:
+            print("Completed Currently Working repository processing.")
 
-        for key, val in terraform_repos.items():
-            terraform_repos[key] = sorted(val, key=lambda x: x["name"])
+    # Sort the elements of the lists
+    for key, val in cloudformation_repos.items():
+        cloudformation_repos[key] = sorted(val, key=lambda x: x["name"])
 
-        for key, val in gha_repos.items():
-            gha_repos[key] = sorted(val, key=lambda x: x["name"])
+    if debug:
+        print("Completed CloudFormation repository processing.")
+
+    for key, val in terraform_repos.items():
+        terraform_repos[key] = sorted(val, key=lambda x: x["name"])
+
+    if debug:
+        print("Completed Terraform repository processing.")
+
+    for key, val in gha_repos.items():
+        gha_repos[key] = sorted(val, key=lambda x: x["name"])
+
+    if debug:
+        print("Completed GitHub Action repository processing.")
 
     if debug:
         num_cloudformation_repos = sum([len(v) for v in cloudformation_repos.values()])
