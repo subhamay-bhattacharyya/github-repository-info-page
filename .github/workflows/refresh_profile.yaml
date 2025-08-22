@@ -24,13 +24,14 @@ on:
 
 permissions:
   id-token: write
-  contents: read
-  
+    contents: read
+
 jobs:
   refresh-profile:
+
     name: Refresh GitHub Profile
     runs-on: ubuntu-latest
-
+    environment: ci
     # Prevent overlapping runs of THIS workflow on the same branch
     concurrency:
       group: refresh-profile-${{ github.ref }}
@@ -67,8 +68,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: "arn:aws:iam::637423502513:role/subhamay-github-oidc-role"
-          aws-region: ${{ inputs.s3-region }}
+          role-to-assume: ${{ secrets.aws-role-arn }}
+          aws-region: ${{ vars.AWS_REGION }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -80,9 +81,9 @@ jobs:
         id: validate
         uses: subhamay-bhattacharyya-gha/tf-validate-action@main
         with:
-          terraform-dir: "terraform-code"
-          s3-bucket: ${{ inputs.tf-state-bucket }}
-          s3-region: ${{ inputs.s3-region }}
+          terraform-dir: "tf"
+          s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+          s3-region: ${{ vars.AWS_REGION }}
 
       # - name: Run TFLint
       #   uses: subhamay-bhattacharyya-gha/tf-lint-action@main
