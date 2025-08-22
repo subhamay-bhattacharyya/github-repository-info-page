@@ -137,12 +137,14 @@ mindmap
 
 ## Projects
 
-| Project Name   | Description     | Repository | Status       |
-|:-------------- |:--------------: |:----------:|:-----------  |
-| Project 1      | Example desc 1  | No Repo     | In Progress |
-| Project 2      | Example desc 2  | [Repo 2](#) | Completed   |
-| Project 3      | Example desc 3  | [Repo 3](#) | Planned     |
-
+%{ for category_key, category_value in cfn-repos ~}
+### ${category_key}
+| Repository          | Description             | URL                                         | Status         |
+|:--------------------|:------------------------|:--------------------------------------------:|:---------------|
+%{ for repo in category_value ~}
+| ${repo.name}        | ${repo.description}     | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> | ![Status]${repo.status}|
+%{ endfor ~}
+%{ endfor ~}
 
 ---
 

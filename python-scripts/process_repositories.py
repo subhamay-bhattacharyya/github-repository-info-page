@@ -7,6 +7,11 @@ from typing import Dict, Any, List, Tuple
 from collections import Counter
 import requests
 
+STATUS_BADGES = {
+    "not-started": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000",
+    "in-progress": "https://img.shields.io/badge/-IN%20PROGRESS-6C63FF?style=flat&labelColor=00000000",
+    "completed": "https://img.shields.io/badge/-COMPLETED-6C63FF?style=flat&labelColor=00000000"
+}
 
 def parse_args():
 
@@ -94,6 +99,13 @@ def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
         print(f"❌ Exception occurred while fetching repositories: {e}", file=sys.stderr)
         return []
 
+def get_status(topics):
+    for status in ["in-progress", "not-started", "completed"]:
+        if status in topics:
+            return STATUS_BADGES.get(status, "-")
+        
+    return STATUS_BADGES.get("not-started", "-")
+
 def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False) -> List[Dict[str, Any]]:
     """
     Process a list of repository dictionaries and return processed information.
@@ -109,9 +121,8 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
     terraform_repos = {}
     currently_working_repos = []
 
-
     for repo in repositories:
-        get_status = lambda topics: next((status for status in ["in-progress", "not-started", "completed"] if status in topics), "not-started")
+
         repo_info = {
             "name": repo.get("name"),
             "description": repo.get("description"),
@@ -147,24 +158,6 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
         print(f"CloudFormation Repositories: {num_cloudformation_repos}")
         print(f"Terraform Repositories: {num_terraform_repos}")
         print(f"Currently Working Repositories: {len(currently_working_repos)}")
-
-    # print("CloudFormation Repositories:")
-    # for key, value in cloudformation_repos.items():
-    #     print(f"{key}: {len(value)} repositories")
-    #     for i, repo in enumerate(value):
-    #         print(f"{i+1}  - {repo}")
-
-    # print("----------------------------------------")
-    # print("Terraform Repositories:")
-    # for key, value in terraform_repos.items():
-    #     print(f"{key}: {len(value)} repositories")
-    #     for i, repo in enumerate(value):
-    #         print(f"{i + 1}. {repo}")
-    # print("----------------------------------------")
-    # print("Currently Working Repositories:")
-    # for i, repo in enumerate(currently_working_repos):
-    #     print(f"{i + 1}. {repo}")
-    # print("----------------------------------------")
 
     return cloudformation_repos, terraform_repos, currently_working_repos
 

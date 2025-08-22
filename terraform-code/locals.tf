@@ -9,7 +9,7 @@ locals {
 }
 
 output "cloudformation-repos" {
-  value = local.flat_cloudformation_repos
+  value = local.cloudformation-repos
 }
 
 
