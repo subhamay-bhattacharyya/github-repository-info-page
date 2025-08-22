@@ -60,7 +60,13 @@ jobs:
             --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
 
-      - name: Artifact files
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: "arn:aws:iam::637423502513:role/subhamay-github-oidc-role"
+          aws-region: ${{ inputs.s3-region }}
+
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: output-files
