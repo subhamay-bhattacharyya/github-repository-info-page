@@ -94,6 +94,8 @@ def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
 
         if debug:
             print(f"Fetched {len(repos)} repositories from organization '{org}'.")
+            print("First repository:")
+            print(repos[0])
 
         return repos
     except Exception as e:

@@ -91,10 +91,9 @@ jobs:
         uses: subhamay-bhattacharyya-gha/tf-plan-action@main
         with:
           terraform-dir: "tf"
-          # tf-vars-file: ${{ inputs.tf-vars-file }}
+          tf-vars-file: "terraform.tfvars"
           s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
           s3-region: ${{ vars.AWS_REGION }}
-          # ci-pipeline: ${{ inputs.ci-pipeline }}
 
       - name: Terraform Apply
         uses: subhamay-bhattacharyya-gha/tf-apply-action@main
