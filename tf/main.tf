@@ -1,6 +1,6 @@
 resource "github_repository" "this" {
   name        = ".github"
-  description = "A repository for subhamay's profile"
+  description = "A GitHub profile repository of Subhamay Bhattacharyya"
   visibility  = "public"
   auto_init   = true
 
