@@ -2,7 +2,7 @@
   "TemplateRepository": [
     {
       "name": "cloudformation-template",
-      "description": "📄 🎯 GitHub Repository Template for CloudFormation as IaC.",
+      "description": "\ud83d\udcc4 \ud83c\udfaf GitHub Repository Template for CloudFormation as IaC.",
       "url": "https://github.com/subhamay-bhattacharyya/cloudformation-template",
       "status": "in-progress"
     }
@@ -20,59 +20,40 @@
       "url": "https://github.com/subhamay-bhattacharyya/1002-container-cft",
       "status": "not-started"
     },
-      "name": "0501-data-protection-tf",
-      "description": "Module 1: S3 Versioning using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0501-data-protection-tf",
+    {
+      "name": "1003-container-cft",
+      "description": "Lab 3. Scale the adoption platform monolith with an ALB and an ECS Service using CloudFormation.",
+      "url": "https://github.com/subhamay-bhattacharyya/1003-container-cft",
       "status": "not-started"
     },
     {
-      "name": "0502-data-protection-tf",
-      "description": "Module 2: S3 Object Lock using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0502-data-protection-tf",
+      "name": "1004-container-cft",
+      "description": "Lab 4. Incrementally build and deploy more microservices with AWS Fargate using CloudFormation.",
+      "url": "https://github.com/subhamay-bhattacharyya/1004-container-cft",
       "status": "not-started"
     },
     {
-      "name": "0503-data-protection-tf",
-      "description": "Module 3: S3 Replication using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0503-data-protection-tf",
+      "name": "1005-container-cft",
+      "description": "Lab 5. Launch your Amazon EKS Cluster using CloudFormation.",
+      "url": "https://github.com/subhamay-bhattacharyya/1005-container-cft",
       "status": "not-started"
     },
     {
-      "name": "0504-data-protection-tf",
-      "description": "Module 4: S3 Multi-Region Access Points using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0504-data-protection-tf",
+      "name": "1006-container-cft",
+      "description": "Lab 6. Preparing EKS for the Mysfits using CloudFormation.",
+      "url": "https://github.com/subhamay-bhattacharyya/1006-container-cft",
       "status": "not-started"
     },
     {
-      "name": "0505-data-protection-tf",
-      "description": "Module 5: Cross-account S3 Replication and Multi-Region Access Points using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0505-data-protection-tf",
-      "status": "not-started"
-    }
-  ],
-  "Storage": [
-    {
-      "name": "0101-storage-tf",
-      "description": "S3 Security Best Practices using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0101-storage-tf",
+      "name": "1007-container-cft",
+      "description": "Lab 7. Deploying the monolith using CloudFormation.",
+      "url": "https://github.com/subhamay-bhattacharyya/1007-container-cft",
       "status": "not-started"
     },
     {
-      "name": "0102-storage-tf",
-      "description": "Storage Performance Lab using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0102-storage-tf",
-      "status": "not-started"
-    },
-    {
-      "name": "0103-storage-tf",
-      "description": "Migrating Data to AWS using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0103-storage-tf",
-      "status": "not-started"
-    },
-    {
-      "name": "0104-storage-tf",
-      "description": "AWS Backup Lab using Terraform.",
-      "url": "https://github.com/subhamay-bhattacharyya/0104-storage-tf",
+      "name": "1008-container-cft",
+      "description": "Lab 8. Incrementally build and deploy more microservices with EKS and AWS Load Balancer Controller using CloudFormation.",
+      "url": "https://github.com/subhamay-bhattacharyya/1008-container-cft",
       "status": "not-started"
     }
   ]
