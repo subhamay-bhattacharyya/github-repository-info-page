@@ -8,6 +8,14 @@ on:
         description: 'Path to the output directory'
         required: true
         default: 'terraform-code/all-repositories/'
+      tf-state-bucket:
+        description: 'S3 bucket name for Terraform state'
+        required: true
+        default: 'subhamay-tf-state-637423502513-devl-us-east-1'
+      s3-region:
+        description: 'S3 region for Terraform state'
+        required: true
+        default: 'us-east-1'
       debug:
         description: 'Enable debug output'
         required: false
@@ -62,12 +70,9 @@ jobs:
         id: validate
         uses: subhamay-bhattacharyya-gha/tf-validate-action@main
         with:
-          environment: "ci"
-          terraform-dir: "terraform-code"   
-          s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
-          s3-region: ${{ vars.AWS_REGION }}
-          ci-pipeline: "true"
-          soft-fail: "true"             
+          terraform-dir: "terraform-code"
+          s3-bucket: ${{ inputs.tf-state-bucket }}
+          s3-region: ${{ inputs.s3-region }}
 
       # - name: Run TFLint
       #   uses: subhamay-bhattacharyya-gha/tf-lint-action@main
