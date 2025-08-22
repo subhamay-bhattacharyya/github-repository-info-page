@@ -3,12 +3,12 @@
     "name": "github-repository-factory",
     "description": "This repository is used to host Terraform config files to generate and maintain GitHub repositories",
     "url": "https://github.com/subhamay-bhattacharyya/github-repository-factory",
-    "status": "in-progress"
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-4CAF50?style=flat&labelColor=00000000"
   },
   {
     "name": "cloudformation-template",
-    "description": "📄 🎯 GitHub Repository Template for CloudFormation as IaC.",
+    "description": "\ud83d\udcc4 \ud83c\udfaf GitHub Repository Template for CloudFormation as IaC.",
     "url": "https://github.com/subhamay-bhattacharyya/cloudformation-template",
-    "status": "in-progress"
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-6C63FF?style=flat&labelColor=00000000"
   }
 ]

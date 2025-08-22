@@ -31,10 +31,12 @@ resource "github_repository_file" "readme" {
 
   content = templatefile("${path.module}/template/README.tftpl",
     {
-      avatar    = data.github_user.current.avatar_url
-      name      = data.github_user.current.name
-      date      = time_static.this.year
-      cfn-repos = local.cloudformation-repos
+      avatar     = data.github_user.current.avatar_url
+      name       = data.github_user.current.name
+      date       = time_static.this.year
+      cfn-repos  = local.cloudformation-repos
+      tf-repos   = local.terraform-repos
+      curr-repos = local.currently-working-repos
     }
   )
 }

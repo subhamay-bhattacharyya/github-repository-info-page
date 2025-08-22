@@ -8,9 +8,9 @@ from collections import Counter
 import requests
 
 STATUS_BADGES = {
-    "not-started": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000",
-    "in-progress": "https://img.shields.io/badge/-IN%20PROGRESS-6C63FF?style=flat&labelColor=00000000",
-    "completed": "https://img.shields.io/badge/-COMPLETED-6C63FF?style=flat&labelColor=00000000"
+    "not-started": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000",
+    "in-progress": "https://img.shields.io/badge/-IN%20PROGRESS-800080?style=flat&labelColor=00000000",  # purple
+    "completed": "https://img.shields.io/badge/-COMPLETED-013220?style=flat&labelColor=00000000"  # dark green
 }
 
 def parse_args():
