@@ -90,18 +90,18 @@ jobs:
         id: plan
         uses: subhamay-bhattacharyya-gha/tf-plan-action@main
         with:
-          terraform-dir: "terraform-code" 
+          terraform-dir: "tf"
           # tf-vars-file: ${{ inputs.tf-vars-file }}
           s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
           s3-region: ${{ vars.AWS_REGION }}
           # ci-pipeline: ${{ inputs.ci-pipeline }}
 
-      # - name: Terraform Apply
-      #   uses: subhamay-bhattacharyya-gha/tf-apply-action@main
-      #   id: apply
-      #   with:
-      #     terraform-dir: "terraform-code"
-      #     s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
-      #     s3-region: ${{ vars.AWS_REGION }}
-      #     ci-pipeline: "false"
+      - name: Terraform Apply
+        uses: subhamay-bhattacharyya-gha/tf-apply-action@main
+        id: apply
+        with:
+          terraform-dir: "tf"
+          s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+          s3-region: ${{ vars.AWS_REGION }}
+          ci-pipeline: "false"
                      
