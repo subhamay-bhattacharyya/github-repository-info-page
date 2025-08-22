@@ -19,11 +19,11 @@ permissions:
   contents: read
 
 jobs:
+  environment: ci
   refresh-profile:
-
     name: Refresh GitHub Profile
     runs-on: ubuntu-latest
-    environment: ci
+    
     # Prevent overlapping runs of THIS workflow on the same branch
     concurrency:
       group: refresh-profile-${{ github.ref }}
