@@ -4,7 +4,7 @@
       "name": "cloudformation-template",
       "description": "\ud83d\udcc4 \ud83c\udfaf GitHub Repository Template for CloudFormation as IaC.",
       "url": "https://github.com/subhamay-bhattacharyya/cloudformation-template",
-      "status": "https://img.shields.io/badge/-IN%20PROGRESS-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
     }
   ],
   "Container": [
@@ -12,49 +12,49 @@
       "name": "1001-container-cft",
       "description": "Lab 1. Containerize the Mythical Mysfits monolith using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1001-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1002-container-cft",
       "description": "Lab 2. Deploy the container using AWS Fargate using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1002-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1003-container-cft",
       "description": "Lab 3. Scale the adoption platform monolith with an ALB and an ECS Service using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1003-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1004-container-cft",
       "description": "Lab 4. Incrementally build and deploy more microservices with AWS Fargate using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1004-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1005-container-cft",
       "description": "Lab 5. Launch your Amazon EKS Cluster using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1005-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1006-container-cft",
       "description": "Lab 6. Preparing EKS for the Mysfits using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1006-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1007-container-cft",
       "description": "Lab 7. Deploying the monolith using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1007-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1008-container-cft",
       "description": "Lab 8. Incrementally build and deploy more microservices with EKS and AWS Load Balancer Controller using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1008-container-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Bedrock": [
@@ -62,97 +62,97 @@
       "name": "1101-bedrock-cft",
       "description": "Text Generation with Amazon Bedrock using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1101-bedrock-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1102-bedrock-cft",
       "description": "Knowledge Bases and RAG using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1102-bedrock-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1103-bedrock-cft",
       "description": "Model Customization using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1103-bedrock-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1104-bedrock-cft",
       "description": "Image and Video Generation Applications using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1104-bedrock-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1105-bedrock-cft",
       "description": "Agents using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1105-bedrock-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1701-bedrock-agent-cft",
       "description": "Lab 1 - Create an Agent with Function Definition using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1701-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1702-bedrock-agent-cft",
       "description": "Lab 2 - Create Agents with API Schema using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1702-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1703-bedrock-agent-cft",
       "description": "Lab 3 - Create Agents with Return of Control (Function Calling) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1703-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1704-bedrock-agent-cft",
       "description": "Lab 4 - Create Agent with a Single Knowledge Base using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1704-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1705-bedrock-agent-cft",
       "description": "Lab 5 - Create an Agent with a Knowledge Base and an Action Group using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1705-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1706-bedrock-agent-cft",
       "description": "Lab 6 - Passing Prompt and Session Attributes to your Agent using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1706-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1707-bedrock-agent-cft",
       "description": "Lab 7 - Overwriting Advanced Prompt and Custom Lambda Parsers using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1707-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1708-bedrock-agent-cft",
       "description": "Lab 8 - Creating Agent with Guardrails for Amazon Bedrock integration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1708-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1709-bedrock-agent-cft",
       "description": "Lab 9 - Creating an agents with memory using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1709-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1710-bedrock-agent-cft",
       "description": "Lab 10 - Creating an agent with code interpretation capabilities using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1710-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1711-bedrock-agent-cft",
       "description": "Lab 11 - Creating Industry Specific Agents using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1711-bedrock-agent-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Step Function": [
@@ -160,109 +160,109 @@
       "name": "1301-step-function-cft",
       "description": "First state machine using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1301-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1302-step-function-cft",
       "description": "Integrating services using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1302-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1303-step-function-cft",
       "description": "Handling errors using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1303-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1304-step-function-cft",
       "description": "Versions and Aliases using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1304-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1305-step-function-cft",
       "description": "Optimizing costs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1305-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1306-step-function-cft",
       "description": "Processing data in parallel using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1306-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1307-step-function-cft",
       "description": "Processing arrays of data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1307-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1308-step-function-cft",
       "description": "Creating state machines with IaC using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1308-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1309-step-function-cft",
       "description": "Integrate with Amazon ECS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1309-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1310-step-function-cft",
       "description": "Distributed map using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1310-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1311-step-function-cft",
       "description": "Human approval using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1311-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1312-step-function-cft",
       "description": "Wait for external system using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1312-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1313-step-function-cft",
       "description": "External HTTP integration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1313-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1314-step-function-cft",
       "description": "Integrate with Amazon Bedrock using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1314-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1315-step-function-cft",
       "description": "Saga Pattern using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1315-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1316-step-function-cft",
       "description": "Product feedback processing using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1316-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1317-step-function-cft",
       "description": "Language Detection and Translation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1317-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1318-step-function-cft",
       "description": "Text Summarization using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1318-step-function-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Networking": [
@@ -270,121 +270,121 @@
       "name": "0301-vpc-cft",
       "description": "VPC Fundamentals using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0301-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0302-vpc-cft",
       "description": "Multiple VPCs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0302-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0303-vpc-cft",
       "description": "Security Controls using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0303-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0304-vpc-cft",
       "description": "Connecting to On-Premises using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0304-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0305-vpc-cft",
       "description": "Network Monitoring using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0305-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0306-vpc-cft",
       "description": "AWS Gateway Load Balancer using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0306-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0307-vpc-cft",
       "description": "Lab 1: Multicast in AWS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0307-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0308-vpc-cft",
       "description": "Lab #1 - VPC Components Deep Dive using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0308-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0309-vpc-cft",
       "description": "Lab #2 - Transit Gateway and Site-to-Site VPNs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0309-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0310-vpc-cft",
       "description": "Lab #3 - Route53 DNS Endpoints and Internal Hosted Zones using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0310-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0311-vpc-cft",
       "description": "Lab #4 - VPC Endpoints for AWS Services using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0311-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0312-vpc-cft",
       "description": "Lab #5 - VPC Endpoint Services using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0312-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0313-vpc-cft",
       "description": "Lab #6  VPC Peering using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0313-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0314-vpc-cft",
       "description": "Lab #7 - Transit Gateway Network Manager using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0314-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1601-vpc-cft",
       "description": "Module 1: Egress connectivity from an IPv6-only instance using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1601-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1602-vpc-cft",
       "description": "Module 2: Ingress connectivity to IPv6-only instances using an NLB using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1602-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1603-vpc-cft",
       "description": "Module 3: Private connectivity to IPv6 services using AWS PrivateLink using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1603-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1604-vpc-cft",
       "description": "Module 4: IPv6 connectivity using AWS Transit Gateway using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1604-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1605-vpc-cft",
       "description": "Module 5: Ingress connectivity to IPv6-only instances using ALB using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1605-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1606-vpc-cft",
       "description": "Module 6: Understanding IPv6 on Amazon EKS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1606-vpc-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Kubernetes": [
@@ -392,13 +392,13 @@
       "name": "1201-kubernetes-cft",
       "description": "Karpenter using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1201-kubernetes-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1202-kubernetes-cft",
       "description": "Scaling an application and cluster using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1202-kubernetes-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Highly Available Architecture": [
@@ -406,7 +406,7 @@
       "name": "1401-highly-available-cft",
       "description": "Highly Available Web Application Workshop using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1401-highly-available-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Event Bridge": [
@@ -414,43 +414,43 @@
       "name": "1801-event-bridge-cft",
       "description": "Event-driven with EventBridge using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1801-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1802-event-bridge-cft",
       "description": "Event-driven with EventBridge using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1802-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1803-event-bridge-cft",
       "description": "Using the schema registry using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1803-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1804-event-bridge-cft",
       "description": "Archive and Replay using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1804-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1805-event-bridge-cft",
       "description": "Global endpoints using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1805-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1806-event-bridge-cft",
       "description": "Event-driven with Lambda using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1806-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1807-event-bridge-cft",
       "description": "Event-driven with SNS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1807-event-bridge-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "No Category": [
@@ -458,43 +458,43 @@
       "name": "0701-intelligence-dashboard-cft",
       "description": "Cloud Intelligence Dashboards Framework using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0701-intelligence-dashboard-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1901-tagging-cft",
       "description": "Managing tags using the console & AWS CLI using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1901-tagging-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1902-tagging-cft",
       "description": "AWS Resource Groups using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1902-tagging-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1903-tagging-cft",
       "description": "IaC & tagging using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1903-tagging-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1904-tagging-cft",
       "description": "CI/CD & tagging using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1904-tagging-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1905-tagging-cft",
       "description": "Tag Governance with AWS Config using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1905-tagging-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "1906-tagging-cft",
       "description": "AWS Tag Policies using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/1906-tagging-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Elastic Map Reduce": [
@@ -502,55 +502,55 @@
       "name": "2601-emr-cft",
       "description": "Cluster Creation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2601-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2602-emr-cft",
       "description": "Spark-based ETL using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2602-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2603-emr-cft",
       "description": "Hive Workshop using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2603-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2604-emr-cft",
       "description": "Presto Workshop using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2604-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2605-emr-cft",
       "description": "EMR Managed Scaling using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2605-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2606-emr-cft",
       "description": "Pig Workshop using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2606-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2607-emr-cft",
       "description": "EMR Notebooks and SageMaker using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2607-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2608-emr-cft",
       "description": "Hudi Workshop using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2608-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2609-emr-cft",
       "description": "Orchestrating Amazon EMR with AWS StepFunctions using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2609-emr-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Glue": [
@@ -558,91 +558,91 @@
       "name": "0201-glue-cft",
       "description": "Lab 01: Working with Glue Data Catalog using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0201-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0202-glue-cft",
       "description": "Lab 02: Working with Apache Spark using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0202-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0203-glue-cft",
       "description": "Lab 03: Working with Glue ETL using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0203-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0204-glue-cft",
       "description": "Lab 04: Working with Glue Streaming using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0204-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0205-glue-cft",
       "description": "Lab 05: Working with Glue Studio using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0205-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0206-glue-cft",
       "description": "Lab 06: Monitoring, Troubleshooting and Scaling using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0206-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0207-glue-cft",
       "description": "Lab 07: Glue Job Orchestration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0207-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0208-glue-cft",
       "description": "Lab 08: CI/CD in AWS Glue using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0208-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0209-glue-cft",
       "description": "Lab 09: Working with AWS Glue job bookmarks using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0209-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0210-glue-cft",
       "description": "Lab 10: Working with AWS Glue Data Quality using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0210-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0211-glue-cft",
       "description": "Lab 11: Working with Glue Databrew using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0211-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0212-glue-cft",
       "description": "Legacy ETL to AWS Glue Migration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0212-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2301-glue-cft",
       "description": "Glue Crawler using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2301-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2302-glue-cft",
       "description": "Glue Studio - ETL using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2302-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2303-glue-cft",
       "description": "Lab 3: Personal Identifiable Information (PII) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2303-glue-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Redshift": [
@@ -650,49 +650,49 @@
       "name": "2501-redshift-cft",
       "description": "Getting Started using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2501-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2502-redshift-cft",
       "description": "Table Design and Load using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2502-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2503-redshift-cft",
       "description": "Ongoing Load - ELT using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2503-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2504-redshift-cft",
       "description": "Data Sharing using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2504-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2505-redshift-cft",
       "description": "Machine Learning - Redshift ML using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2505-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2506-redshift-cft",
       "description": "Query Data Lake - Redshift Spectrum using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2506-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2507-redshift-cft",
       "description": "Operations using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2507-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2508-redshift-cft",
       "description": "Seamless Data Sharing Using Amazon Redshift using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2508-redshift-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Generative AI": [
@@ -700,163 +700,163 @@
       "name": "0801-gen-ai-cft",
       "description": "Stream 1: Getting started with generative AI using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0801-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0802-gen-ai-cft",
       "description": "Stream 2: Working with private documents using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0802-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0803-gen-ai-cft",
       "description": "Stream 3: Working with image files using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0803-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0804-gen-ai-cft",
       "description": "Stream 4: Working with video files using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0804-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0805-gen-ai-cft",
       "description": "Stream 5: Working with audio files using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0805-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0806-gen-ai-cft",
       "description": "Stream 6: Working with SQL database using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0806-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0807-gen-ai-cft",
       "description": "Stream 7: Working with graphs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0807-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0808-gen-ai-cft",
       "description": "Stream 8: Working with business intelligence using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0808-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0809-gen-ai-cft",
       "description": "Stream 9: Working with logs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0809-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0810-gen-ai-cft",
       "description": "Stream 10: Working with streaming data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0810-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0811-gen-ai-cft",
       "description": "Stream 11: Working with CSV files using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0811-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0812-gen-ai-cft",
       "description": "Stream 12: Working with forms using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0812-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0813-gen-ai-cft",
       "description": "Stream 13: Working with code using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0813-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2101-gen-ai-cft",
       "description": "Building a Serverless Text-to-Speech Application with Amazon Polly using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2101-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2901-gen-ai-chatbot-cft",
       "description": "Create a Serverless Chatbot Using Amazon Bedrock, Amazon Kendra, and Your Own Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2901-gen-ai-chatbot-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3900-gen-ai-cft",
       "description": "Module 1: Build an Agentic Chatbot using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3900-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3901-gen-ai-cft",
       "description": "Module 2: Building an Agentic Workflow with Amazon Bedrock using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3901-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3902-gen-ai-cft",
       "description": "Module 3: Using 3rd Party Agentic Workflows using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3902-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3903-gen-ai-cft",
       "description": "Module 4: Building an Agentic Workflow with SageMaker AI using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3903-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4001-gen-ai-cft",
       "description": "Data Discovery using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4001-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4002-gen-ai-cft",
       "description": "Product and Support Knowledge Base using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4002-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4003-gen-ai-cft",
       "description": "Customer AI Agent using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4003-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4004-gen-ai-cft",
       "description": "Advanced QuickSight using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4004-gen-ai-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4101-gen-ai-llm-cft",
       "description": "Configure event producer for current application using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4101-gen-ai-llm-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4102-gen-ai-llm-cft",
       "description": "Configure Amazon Bedrock Knowledge Base using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4102-gen-ai-llm-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4103-gen-ai-llm-cft",
       "description": "Deploy a new Chatbot feature in the existing application using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4103-gen-ai-llm-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4104-gen-ai-llm-cft",
       "description": "Optimize the Chat Function using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4104-gen-ai-llm-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Security Compliance": [
@@ -864,31 +864,31 @@
       "name": "2401-security-cft",
       "description": "Infrastructure Protection using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2401-security-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2402-security-cft",
       "description": "data-protection using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2402-security-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2403-security-cft",
       "description": "Security Assurance using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2403-security-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2404-security-cft",
       "description": "Identity and Access Management using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2404-security-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "2801-security-compliance-cft",
       "description": "Automating Incident Response Workshop using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/2801-security-compliance-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Migration": [
@@ -896,55 +896,55 @@
       "name": "3201-migration-cft",
       "description": "Discover using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3201-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3202-migration-cft",
       "description": "Database Migration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3202-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3203-migration-cft",
       "description": "Application Migration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3203-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3204-migration-cft",
       "description": "Elastic Disaster Recovery using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3204-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3501-migration-cft",
       "description": "Module 1: The Monolith using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3501-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3502-migration-cft",
       "description": "Module 2: Replatforming using Modernization Pathways using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3502-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3503-migration-cft",
       "description": "Module 3: Move to Managed Database using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3503-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3504-migration-cft",
       "description": "Module 4: Preparing to implement the Strangler Fig pattern using Amazon API Gateway using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3504-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3505-migration-cft",
       "description": "Module 5: Microservices using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3505-migration-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Foundation": [
@@ -952,25 +952,25 @@
       "name": "3101-foundation-cft",
       "description": "AWS 101 Workshop - Creating a Web Application using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3101-foundation-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5001-disaster-recovery-cft",
       "description": "Backup and Restore using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5001-disaster-recovery-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5002-disaster-recovery-cft",
       "description": "Pilot Light using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5002-disaster-recovery-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5003-disaster-recovery-cft",
       "description": "Warm Standby using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5003-disaster-recovery-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "API Gateway": [
@@ -978,97 +978,97 @@
       "name": "4301-api-gateway-cft",
       "description": "Introduction to Amazon API Gateway using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4301-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4302-api-gateway-cft",
       "description": "API Gateway REST Integrations using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4302-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4303-api-gateway-cft",
       "description": "API Gateway REST Integrations Mock using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4303-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4304-api-gateway-cft",
       "description": "API Gateway REST Integrations HTTP Integration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4304-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4305-api-gateway-cft",
       "description": "API Gateway REST Integrations AWS Lambda using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4305-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4306-api-gateway-cft",
       "description": "API Gateway REST Integrations AWS Step Functions using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4306-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4307-api-gateway-cft",
       "description": "API Gateway REST Integrations Amazon SQS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4307-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4308-api-gateway-cft",
       "description": "API Gateway REST Integrations Amazon SNS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4308-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4309-api-gateway-cft",
       "description": "API Gateway REST Integrations Amazon Kinesis using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4309-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4310-api-gateway-cft",
       "description": "API Gateway REST Integrations Amazon DynamoDB using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4310-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4311-api-gateway-cft",
       "description": "API Gateway REST Integrations Amazon EventBridge using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4311-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4312-api-gateway-cft",
       "description": "API Gateway REST Integrations Private Integration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4312-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4313-api-gateway-cft",
       "description": "API Gateway REST Integrations Amazon S3 using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4313-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4314-api-gateway-cft",
       "description": "Observability in API Gateway using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4314-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4315-api-gateway-cft",
       "description": "WebSocket APIs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4315-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4316-api-gateway-cft",
       "description": "Enable fine-grained access control for your APIs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4316-api-gateway-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Athena": [
@@ -1076,49 +1076,49 @@
       "name": "3801-athena-cft",
       "description": "Athena Basics using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3801-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3802-athena-cft",
       "description": "Athena Federation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3802-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3803-athena-cft",
       "description": "User Defined Functions using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3803-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3804-athena-cft",
       "description": "Custom Data Source Connector using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3804-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3805-athena-cft",
       "description": "Text Analysis using UDF using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3805-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3806-athena-cft",
       "description": "Machine Learning using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3806-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3807-athena-cft",
       "description": "ACID Transactions with Iceberg using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3807-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3808-athena-cft",
       "description": "Athena Spark using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3808-athena-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Data Lake": [
@@ -1126,49 +1126,49 @@
       "name": "0901-datalake-cft",
       "description": "Lab 1 \u2013 Discovering and Cataloging your Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0901-datalake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0902-datalake-cft",
       "description": "Lab 2 - Exploring your Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0902-datalake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0903-datalake-cft",
       "description": "Lab 3 \u2013 Transforming your Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0903-datalake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0904-datalake-cft",
       "description": "Lab 4 \u2013 Enriching your Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0904-datalake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0905-datalake-cft",
       "description": "Lab 5 \u2013 Visualizing your Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0905-datalake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4601-data-lake-cft",
       "description": "Lab1: Data Ingestion & Storage using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4601-data-lake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4602-data-lake-cft",
       "description": "Lab2: Data Cataloging and ETL using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4602-data-lake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4603-data-lake-cft",
       "description": "Lab3: Data Analytics & Visualization using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4603-data-lake-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Sagemaker": [
@@ -1176,37 +1176,37 @@
       "name": "3601-sagemaker-cft",
       "description": "Lakehouse using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3601-sagemaker-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3602-sagemaker-cft",
       "description": "Catalog (Data & AI Governance) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3602-sagemaker-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3603-sagemaker-cft",
       "description": "Data Processing using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3603-sagemaker-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3604-sagemaker-cft",
       "description": "SQL Analytics using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3604-sagemaker-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3605-sagemaker-cft",
       "description": "ML/GenAI Model Development using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3605-sagemaker-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "3606-sagemaker-cft",
       "description": "Generative AI Application Development using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/3606-sagemaker-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "AWS Power Tools": [
@@ -1214,13 +1214,13 @@
       "name": "4201-power-tools-cft",
       "description": "Workshop - Module 1 using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4201-power-tools-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "4202-power-tools-cft",
       "description": "Workshop - Module 2 using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/4202-power-tools-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Serverless Patterns": [
@@ -1228,253 +1228,253 @@
       "name": "0601-serverless-cft",
       "description": "M1 - Intro to Serverless using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0601-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0602-serverless-cft",
       "description": "M2 - Synchronous Invocation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0602-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0603-serverless-cft",
       "description": "M3 - Synchronous + Idempotence using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0603-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0604-serverless-cft",
       "description": "M4 - Asynchronous Invocation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0604-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0605-serverless-cft",
       "description": "M5 - Polling using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0605-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0606-serverless-cft",
       "description": "M6 - Streaming Data using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0606-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0607-serverless-cft",
       "description": "M7 - Streaming Datalake using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0607-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0608-serverless-cft",
       "description": "M8 - Deployment Strategies using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0608-serverless-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5201-serverless-patterns-cft",
       "description": "Simple CRUD API (HTTP \u2192 Lambda \u2192 DynamoDB) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5201-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5202-serverless-patterns-cft",
       "description": "Authenticated CRUD API (Cognito-authorized) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5202-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5203-serverless-patterns-cft",
       "description": "GraphQL API with Aurora Serverless using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5203-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5204-serverless-patterns-cft",
       "description": "API Gateway \u2192 SQS (Async Ingestion) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5204-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5205-serverless-patterns-cft",
       "description": "S3 Event-Driven ETL using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5205-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5206-serverless-patterns-cft",
       "description": "S3 \u2192 Step Functions (Fan-out & Orchestration) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5206-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5207-serverless-patterns-cft",
       "description": "Multipart Upload API using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5207-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5208-serverless-patterns-cft",
       "description": "SNS Fan-out (Topic \u2192 Multiple Subscribers) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5208-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5209-serverless-patterns-cft",
       "description": "Queue Worker (SQS \u2192 Lambda) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5209-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5210-serverless-patterns-cft",
       "description": "Dead-Letter Handling Pipeline using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5210-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5211-serverless-patterns-cft",
       "description": "Event Sourcing (DynamoDB Streams) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5211-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5212-serverless-patterns-cft",
       "description": "Saga Orchestration (Step Functions) using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5212-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5213-serverless-patterns-cft",
       "description": "Human-in-the-loop Approval using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5213-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5214-serverless-patterns-cft",
       "description": "Batch/Periodic Jobs using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5214-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5215-serverless-patterns-cft",
       "description": "Web/Mobile Notifications using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5215-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5216-serverless-patterns-cft",
       "description": "Email/Webhook Processor using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5216-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5217-serverless-patterns-cft",
       "description": "Change Data Capture to Search using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5217-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5218-serverless-patterns-cft",
       "description": "Read-Through Cache for Aurora using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5218-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5219-serverless-patterns-cft",
       "description": "Data Lake Landing \u2192 Curated using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5219-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5220-serverless-patterns-cft",
       "description": "Cognito User Management Hooks using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5220-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5221-serverless-patterns-cft",
       "description": "Fine-Grained Authorization using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5221-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5222-serverless-patterns-cft",
       "description": "Order Intake & Validation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5222-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5223-serverless-patterns-cft",
       "description": "Payment Orchestration using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5223-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5224-serverless-patterns-cft",
       "description": "Receipt Generation & Storage using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5224-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5225-serverless-patterns-cft",
       "description": "Media Transcode Pipeline using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5225-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5226-serverless-patterns-cft",
       "description": "Lightweight Inference Endpoint using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5226-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5227-serverless-patterns-cft",
       "description": "Idempotent Write-Behind using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5227-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5228-serverless-patterns-cft",
       "description": "Outbox/Inbox Pattern using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5228-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5229-serverless-patterns-cft",
       "description": "Dead-Simple Rate Limiting / Token Bucket using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5229-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5230-serverless-patterns-cft",
       "description": "Blue/Green Read Model using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5230-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5231-serverless-patterns-cft",
       "description": "Transaction-heavy Workflow using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5231-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5232-serverless-patterns-cft",
       "description": "Hybrid NoSQL + SQL using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5232-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5233-serverless-patterns-cft",
       "description": "Event Audit & Trace Correlation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5233-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5234-serverless-patterns-cft",
       "description": "Automated PII Redaction on Ingest using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5234-serverless-patterns-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Data Engineering": [
@@ -1482,37 +1482,37 @@
       "name": "5101-data-engineering-cft",
       "description": "Lab: Real-Time Clickstream Anomaly Detection with Amazon Managed Service for Apache Flink using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5101-data-engineering-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5102-data-engineering-cft",
       "description": "Lab: Ingestion with DMS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5102-data-engineering-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5103-data-engineering-cft",
       "description": "Lab: Transforming data with Glue using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5103-data-engineering-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5104-data-engineering-cft",
       "description": "Lab: Query and Visualize using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5104-data-engineering-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5105-data-engineering-cft",
       "description": "Lab: Data Lake Automation using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5105-data-engineering-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "5106-data-engineering-cft",
       "description": "Bonus Lab: Glue DataBrew using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/5106-data-engineering-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "General": [
@@ -1520,37 +1520,37 @@
       "name": "0401-general-cft",
       "description": "Compute - Amazon EC2 using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0401-general-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0402-general-cft",
       "description": "Network - Amazon VPC using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0402-general-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0403-general-cft",
       "description": "Security - AWS IAM & Config & CloudTrail using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0403-general-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0404-general-cft",
       "description": "Monitoring - Amazon CloudWatch using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0404-general-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0405-general-cft",
       "description": "Database - Amazon RDS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0405-general-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0406-general-cft",
       "description": "Storage - Amazon S3 & EFS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0406-general-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Storage": [
@@ -1558,25 +1558,25 @@
       "name": "0101-storage-cft",
       "description": "S3 Security Best Practices using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0101-storage-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0102-storage-cft",
       "description": "Storage Performance Lab using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0102-storage-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0103-storage-cft",
       "description": "Migrating Data to AWS using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0103-storage-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0104-storage-cft",
       "description": "AWS Backup Lab using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0104-storage-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     }
   ],
   "Data Protection": [
@@ -1584,31 +1584,113 @@
       "name": "0501-data-protection-cft",
       "description": "Module 1: S3 Versioning using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0501-data-protection-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0502-data-protection-cft",
       "description": "Module 2: S3 Object Lock using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0502-data-protection-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0503-data-protection-cft",
       "description": "Module 3: S3 Replication using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0503-data-protection-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0504-data-protection-cft",
       "description": "Module 4: S3 Multi-Region Access Points using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0504-data-protection-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
     },
     {
       "name": "0505-data-protection-cft",
       "description": "Module 5: Cross-account S3 Replication and Multi-Region Access Points using CloudFormation.",
       "url": "https://github.com/subhamay-bhattacharyya/0505-data-protection-cft",
-      "status": "https://img.shields.io/badge/-NOT%20STARTED-6C63FF?style=flat&labelColor=00000000"
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "GitHub Reusable Action": [
+    {
+      "name": "build-glue-script-action",
+      "description": "GitHub Composite Action - Build Glue Script",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/build-glue-script-action",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "build-lambda-action",
+      "description": "GitHub Composite Action - Build Lambda Deployment Package",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/build-lambda-action",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "build-lambda-layer-action",
+      "description": "GitHub Composite Action - Build Lambda Layer Deployment Package",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/build-lambda-layer-action",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "build-state-machine-action",
+      "description": "GitHub Composite Action - Build State Machine Deployment Package",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/build-state-machine-action",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-create-stack-action",
+      "description": "GitHub Composite Action - CloudFormation Create Stack",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-create-stack-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-delete-stack-action",
+      "description": "GitHub Composite Action - CloudFormation Delete Stack",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-delete-stack-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-lint-action",
+      "description": "GitHub Composite Action - CloudFormation Linter",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-lint-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-read-deployment-params-action",
+      "description": "GitHub Composite Action: Read CloudFormation deployment parameters from a JSON file",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-read-deployment-params-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-stack-params-action",
+      "description": "GitHub JavaScript Action - Prepare CloudFormation Stack Creation Parameters",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-stack-params-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-validate-action",
+      "description": "GitHub Composite Action - CloudFormation Validate",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-validate-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-yor-action",
+      "description": "GitHub Composite Action - Add Git metadata tags to CloudFormation Template",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-yor-action",
+      "status": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000"
+    }
+  ],
+  "GitHub Reusable Workflow": [
+    {
+      "name": "cfn-ci-reusable-wf",
+      "description": "GitHub Reusable Workflow: CI Pipeline using CloudFormation as IaC  ",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-ci-reusable-wf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "cfn-release-wf",
+      "description": "GitHub Reusable Workflow: Release workflow for Cloudformation",
+      "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-release-wf",
+      "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
     }
   ]
 }
