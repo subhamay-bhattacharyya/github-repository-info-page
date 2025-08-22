@@ -9,8 +9,9 @@ import requests
 
 STATUS_BADGES = {
     "not-started": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000",
-    "in-progress": "https://img.shields.io/badge/-IN%20PROGRESS-800080?style=flat&labelColor=00000000",  # purple
-    "completed": "https://img.shields.io/badge/-COMPLETED-013220?style=flat&labelColor=00000000"  # dark green
+    "in-progress": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000",  # yellow
+    "completed": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000",  # dark green
+    "marked-for-delete": "https://img.shields.io/badge/-MARKED%20FOR%20DELETE-red?style=flat&labelColor=00000000"  # red
 }
 
 def parse_args():
@@ -130,7 +131,8 @@ def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False
             "url": repo.get("html_url"),
             "status": get_status(repo.get("topics", [])),
         }
-        print(f"Processing repository: {repo_info['name']}")
+        if debug:
+            print(f"Processing repository: {repo_info['name']}")
 
         repo_category = repo.get("custom_properties", {}).get("ProjectCategory", "No Category")
         if "cloudformation" in repo.get("topics", []):
@@ -202,10 +204,10 @@ def main():
         print(f"Output directory '{output_dir}' does not exist.", file=sys.stderr)
         sys.exit(1)
     try:
-        cloudformation_repo_path = Path(output_dir).expanduser().resolve() / "cloudformation_repos.json"
-        terraform_repo_path = Path(output_dir).expanduser().resolve() / "terraform_repos.json"
-        gha_repo_path = Path(output_dir).expanduser().resolve() / "gha_repos.json"
-        currently_working_repos_repo_path = Path(output_dir).expanduser().resolve() / "currently_working_repos.json"
+        cloudformation_repo_path = Path(output_dir).expanduser().resolve() / "cloudformation-repos.json"
+        terraform_repo_path = Path(output_dir).expanduser().resolve() / "terraform-repos.json"
+        gha_repo_path = Path(output_dir).expanduser().resolve() / "gha-repos.json"
+        currently_working_repos_repo_path = Path(output_dir).expanduser().resolve() / "currently-working-repos.json"
     except (OSError, json.JSONDecodeError) as e:
         print(f"Failed to load input JSON: {e}", file=sys.stderr)
         sys.exit(1)

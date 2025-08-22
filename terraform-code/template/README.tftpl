@@ -134,7 +134,6 @@ mindmap
 
 ```
 
-
 <details>
   <summary style="background-color: #b673a7ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">Current Projects</strong></summary>
 
@@ -147,6 +146,18 @@ mindmap
 
 </details>
 
+<details>
+  <summary style="background-color: #b673a7ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">GitHub Action Projects</strong></summary>
+
+%{ for category_key, category_value in gha-repos ~}
+### ${category_key}
+| Repository          | Description         | URL                                         | Status         |
+|:--------------------|:--------------------|:--------------------------------------------:|:---------------|
+%{ for repo in category_value ~}
+| ${repo.name}        | ${repo.description} | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> |![Status](${repo.status})|
+%{ endfor ~}
+%{ endfor ~}
+</details>
 
 <details>
   <summary style="background-color: #e27185ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">CloudFormation Projects</strong></summary>
