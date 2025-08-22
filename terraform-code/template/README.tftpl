@@ -4,7 +4,7 @@
 
 <img src="${avatar}" style="width: 20%; height: auto;">
 
-### Hi there 👋, I am ${name}, 5x AWS, 1x Azure and 1x HashiCorp Terraform Certified and a AWS Cloud Enthusiast
+### Hi there 👋, I am ${name}, 6x AWS, 1x Azure, 2x GitHub and 1x HashiCorp Terraform Certified and a AWS Cloud Enthusiast
 
 <table style="border-collapse: collapse; text-align: center;">
   <tr>
@@ -134,18 +134,65 @@ mindmap
 
 ```
 
+<details>
+  <summary style="background-color: #b673a7ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">Current Projects</strong></summary>
 
-## Projects
+  
+| Repository          | Description             | URL                                         | Status         |
+|:--------------------|:------------------------|:--------------------------------------------:|:---------------|
+%{ for repo in curr-repos ~}
+| ${repo.name}        | ${repo.description}     | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> | ![Status](${repo.status})|
+%{ endfor ~}
 
-| Project Name   | Description     | Repository | Status       |
-|:-------------- |:--------------: |:----------:|:-----------  |
-| Project 1      | Example desc 1  | No Repo     | In Progress |
-| Project 2      | Example desc 2  | [Repo 2](#) | Completed   |
-| Project 3      | Example desc 3  | [Repo 3](#) | Planned     |
+</details>
 
+<details>
+  <summary style="background-color: #b673a7ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">GitHub Action Projects</strong></summary>
+
+%{ for category_key, category_value in gha-repos ~}
+### ${category_key}
+| Repository          | Description         | URL                                         | Status         |
+|:--------------------|:--------------------|:--------------------------------------------:|:---------------|
+%{ for repo in category_value ~}
+| ${repo.name}        | ${repo.description} | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> |![Status](${repo.status})|
+%{ endfor ~}
+%{ endfor ~}
+</details>
+
+<details>
+  <summary style="background-color: #e27185ff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">CloudFormation Projects</strong></summary>
+
+
+%{ for category_key, category_value in cfn-repos ~}
+### ${category_key}
+| Repository          | Description             | URL                                         | Status         |
+|:--------------------|:------------------------|:--------------------------------------------:|:---------------|
+%{ for repo in category_value ~}
+| ${repo.name}        | ${repo.description}     | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> | ![Status](${repo.status})|
+%{ endfor ~}
+%{ endfor ~}
+
+</details>
+
+
+
+<details>
+  <summary style="background-color: #aecceaff; padding: 8px; border-radius: 6px;"><strong style="font-size: 1.5em;">Terraform Projects</strong></summary>
+
+
+%{ for category_key, category_value in tf-repos ~}
+### ${category_key}
+| Repository          | Description             | URL                                         | Status         |
+|:--------------------|:------------------------|:--------------------------------------------:|:---------------|
+%{ for repo in category_value ~}
+| ${repo.name}        | ${repo.description}     | <a href="${repo.url}"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" width="32" height="32"></a> | ![Status](${repo.status})|
+%{ endfor ~}
+%{ endfor ~}
+
+</details>
 
 ---
-
-
-
 © ${date} ${name}
+
+---
+__Profile generated at ${time-stamp}__

@@ -4,11 +4,10 @@ run-name: Refresh GitHub Profile run by ${{ github.actor }} on ${{ github.ref_na
 on:
   workflow_dispatch:
     inputs:
-      output_path:
-        description: 'Path to the output JSON file (optional)'
-        required: false
-        default: 'all-repositories.json'
-        type: string
+      output-dir:
+        description: 'Path to the output directory'
+        required: true
+        default: 'terraform-code/all-repositories/'
       debug:
         description: 'Enable debug output'
         required: false
@@ -43,12 +42,55 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Python script (maintain_gists.py)
+      - name: Execute Python script (process_repositories.py)
         env:
           GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
-        working-directory: ${{ github.workspace }}/python-scripts
+        working-directory: ${{ github.workspace }}
         run: |
-            python process-repositories.py \
+            python python-scripts/process_repositories.py \
             --org "${{ github.repository_owner }}" \
-            ${{ inputs.output_path != '' && format('--output "{0}"', inputs.output_path) || '' }} \
+            --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
+
+      - name: Upload output files
+        uses: actions/upload-artifact@v4
+        with:
+          name: output-files
+          path: ${{ github.workspace }}/${{ inputs.output-dir }}
+
+      - name: Terraform Validation and Formatting Checks
+        id: validate
+        uses: subhamay-bhattacharyya-gha/tf-validate-action@main
+        with:
+          terraform-dir: "terraform-code"   
+          s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+          s3-region: ${{ vars.AWS_REGION }}
+          ci-pipeline: "false"
+          soft-fail: "true"             
+
+      # - name: Run TFLint
+      #   uses: subhamay-bhattacharyya-gha/tf-lint-action@main
+      #   with:
+      #     tflint-ver: ${{ vars.TF_LINT_VER }}
+      #     use-cache: "true"
+      #     tflint-format: "compact"
+
+      # - name: Terraform Plan
+      #   id: plan
+      #   uses: subhamay-bhattacharyya-gha/tf-plan-action@main
+      #   with:
+      #     terraform-dir: "terraform-code" 
+      #     # tf-vars-file: ${{ inputs.tf-vars-file }}
+      #     s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+      #     s3-region: ${{ vars.AWS_REGION }}
+      #     ci-pipeline: ${{ inputs.ci-pipeline }}
+
+      # - name: Terraform Apply
+      #   uses: subhamay-bhattacharyya-gha/tf-apply-action@main
+      #   id: apply
+      #   with:
+      #     terraform-dir: "terraform-code"
+      #     s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+      #     s3-region: ${{ vars.AWS_REGION }}
+      #     ci-pipeline: "false"
+                     

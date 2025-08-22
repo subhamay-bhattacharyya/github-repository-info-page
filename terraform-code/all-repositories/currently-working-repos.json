@@ -1,0 +1,32 @@
+[
+  {
+    "name": "terraform-template",
+    "description": "\ud83d\udcc4\ud83c\udfaf GitHub Repository Template for Terraform as IaC.",
+    "url": "https://github.com/subhamay-bhattacharyya/terraform-template",
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
+  },
+  {
+    "name": "github-repository-factory",
+    "description": "This repository is used to host Terraform config files to generate and maintain GitHub repositories",
+    "url": "https://github.com/subhamay-bhattacharyya/github-repository-factory",
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
+  },
+  {
+    "name": "cloudformation-template",
+    "description": "\ud83d\udcc4 \ud83c\udfaf GitHub Repository Template for CloudFormation as IaC.",
+    "url": "https://github.com/subhamay-bhattacharyya/cloudformation-template",
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
+  },
+  {
+    "name": "github-repository-info-page",
+    "description": "Creates and updated the GitHub repository info page with the list of repositories and their progress. This repository will create the .github repository for the GitHub profile page.",
+    "url": "https://github.com/subhamay-bhattacharyya/github-repository-info-page",
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
+  },
+  {
+    "name": "cfn-release-wf",
+    "description": "GitHub Reusable Workflow: Release workflow for Cloudformation",
+    "url": "https://github.com/subhamay-bhattacharyya-gha/cfn-release-wf",
+    "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
+  }
+]

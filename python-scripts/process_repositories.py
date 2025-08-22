@@ -7,53 +7,15 @@ from typing import Dict, Any, List, Tuple
 from collections import Counter
 import requests
 
-# def load_json(path: Path) -> List[Dict[str, Any]]:
-#     """
-#     Load a JSON file from the given path and return its contents as a list of dictionaries.
-#     Raises an error and exits if the file cannot be read or does not contain a list.
-#     """
-#     try:
-#         with path.open("r", encoding="utf-8") as f:
-#             data = json.load(f)
-#         if not isinstance(data, list):
-#             raise ValueError("Input JSON must be a list of gist items.")
-#         return data
-#     except (OSError, json.JSONDecodeError) as e:
-#         print(f"❌ Failed to read JSON from {path}: {e}", file=sys.stderr)
-#         sys.exit(1)
+STATUS_BADGES = {
+    "not-started": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000",
+    "in-progress": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000",  # yellow
+    "completed": "https://img.shields.io/badge/-COMPLETED-green?style=flat&labelColor=00000000",  # dark green
+    "marked-for-delete": "https://img.shields.io/badge/-MARKED%20FOR%20DELETE-red?style=flat&labelColor=00000000"  # red
+}
 
+def parse_args():
 
-# def parse_args():
-#     """
-#     Parse command-line arguments for the script.
-
-#     Returns:
-#         argparse.Namespace: Parsed command-line arguments.
-#     """
-
-#     parser = argparse.ArgumentParser(
-#         description="Maintain GitHub Gists from a JSON file."
-#     )
-#     parser.add_argument("--input", required=True, help="Path to the input JSON file.")
-#     parser.add_argument(
-#         "--output", help="Path to the output JSON file (defaults to input file)."
-#     )
-#     parser.add_argument("--token", help="GitHub token or path to token file.")
-#     return parser.parse_args()
-
-# def generate_repositories_json(repositories):
-#     # Create a list to hold the repository information
-#     repo_list = []
-
-#     # Iterate through the repositories and extract the relevant information
-#     try:
-#         with all_gists_path.open("r", encoding="utf-8") as f:
-#             gists = json.load(f)
-#     except (OSError, json.JSONDecodeError) as e:
-#         print(f"Failed to read {all_gists_path}: {e}", file=sys.stderr)
-#         return
-    
-def main():
     """
     Main entry point for processing GitHub repositories from a specified organization.
 
@@ -63,7 +25,7 @@ def main():
 
     Arguments:
         --org (str): GitHub organization name (required).
-        --output (str, optional): Path to the output JSON file.
+        --output-dir (str, optional): Path to the output directory.
         --debug (flag): Enable debug output.
 
     Returns:
@@ -76,55 +38,228 @@ def main():
     parser.add_argument(
         "--org",
         required=True,
+        type=str,
         help="GitHub organization name."
     )
     parser.add_argument(
-        "--output",
-        help="Path to the output JSON file."
+        "--output-dir",
+        required=True,
+        type=str,
+        help="Path to the output directory."
     )
     parser.add_argument(
         "--debug",
         action="store_true",
         help="Enable debug output."
     )
+    return parser.parse_args()
 
-    args = parser.parse_args()
-    output_path = args.output
+    
+def get_all_repositories(org: str, debug: bool = False) -> List[Dict[str, Any]]:
+    """
+    Fetch all repositories for the specified GitHub organization.
+
+    Args:
+        org (str): GitHub organization name.
+        debug (bool): Enable debug output.
+
+    Returns:
+        List[Dict[str, Any]]: List of repository data dictionaries.
+    """
+    repos = []
+    session = requests.Session()
+    url = f"https://api.github.com/orgs/{org}/repos"
+    params = {"per_page": 100, "type": "all"}
+    page = 1
+
+    # Add authentication if GITHUB_TOKEN is set in environment
+    github_token = os.environ.get("GITHUB_TOKEN")
+    if github_token:
+        session.headers.update({"Authorization": f"Bearer {github_token}"})
+
+    try:
+        while True:
+            params["page"] = page
+            if debug:
+                print(f"Fetching page {page} from {url} with params {params}")
+            response = session.get(url, params=params)
+            if response.status_code != 200:
+                print(f"❌ Failed to fetch repositories: {response.status_code} {response.text}", file=sys.stderr)
+                break
+            data = response.json()
+            if not data:
+                break
+            repos.extend(data)
+            page += 1
+
+        if debug:
+            print(f"Fetched {len(repos)} repositories from organization '{org}'.")
+
+        return repos
+    except Exception as e:
+        print(f"❌ Exception occurred while fetching repositories: {e}", file=sys.stderr)
+        return []
+
+def get_status(topics):
+    for status in ["in-progress", "not-started", "completed"]:
+        if status in topics:
+            return STATUS_BADGES.get(status, "-")
+        
+    return STATUS_BADGES.get("not-started", "-")
+
+def process_repositories(repositories: List[Dict[str, Any]], debug: bool = False) -> List[Dict[str, Any]]:
+    """
+    Process a list of repository dictionaries and return processed information.
+
+    Args:
+        repositories (List[Dict[str, Any]]): List of repository data dictionaries.
+        debug (bool): Enable debug output.
+
+    Returns:
+        List[Dict[str, Any]]: List of processed repository information.
+    """
+    cloudformation_repos = {}
+    terraform_repos = {}
+    gha_repos = {}
+    currently_working_repos = []
+
+    for repo in repositories:
+
+        repo_info = {
+            "name": repo.get("name"),
+            "description": repo.get("description", ""),
+            "url": repo.get("html_url"),
+            "status": get_status(repo.get("topics", [])),
+        }
+        if debug:
+            print(f"Processing repository: {repo_info['name']}")
+
+        repo_category = repo.get("custom_properties", {}).get("ProjectCategory", "No Category")
+        if "cloudformation" in repo.get("topics", []):
+            category_repos = cloudformation_repos.get(repo_category, [])
+            category_repos.append(repo_info)
+            cloudformation_repos[repo_category] = category_repos
+
+        if "terraform" in repo.get("topics", []):
+            category_repos = terraform_repos.get(repo_category, [])
+            category_repos.append(repo_info)
+            terraform_repos[repo_category] = category_repos
+
+        if "github-action" in repo.get("topics", []):
+            category_repos = gha_repos.get(repo_category, [])
+            category_repos.append(repo_info)
+            gha_repos[repo_category] = category_repos
+
+        if "in-progress" in repo.get("topics", []):
+            currently_working_repos.append(repo_info)
+
+        if debug:
+            print("Completed Currently Working repository processing.")
+
+    # Sort the elements of the lists
+    for key, val in cloudformation_repos.items():
+        cloudformation_repos[key] = sorted(val, key=lambda x: x["name"])
+
+    if debug:
+        print("Completed CloudFormation repository processing.")
+
+    for key, val in terraform_repos.items():
+        terraform_repos[key] = sorted(val, key=lambda x: x["name"])
+
+    if debug:
+        print("Completed Terraform repository processing.")
+
+    for key, val in gha_repos.items():
+        gha_repos[key] = sorted(val, key=lambda x: x["name"])
+
+    if debug:
+        print("Completed GitHub Action repository processing.")
+
+    if debug:
+        num_cloudformation_repos = sum([len(v) for v in cloudformation_repos.values()])
+        num_terraform_repos = sum([len(v) for v in terraform_repos.values()])
+        num_gha_repos = sum([len(v) for v in gha_repos.values()])
+        print(f"Total processed repositories           : {num_cloudformation_repos + num_terraform_repos + len(currently_working_repos)}")
+        print(f"No. of CloudFormation Repositories     : {num_cloudformation_repos}")
+        print(f"No. of Terraform Repositories          : {num_terraform_repos}")
+        print(f"No. of GitHub Action Repositories      : {num_gha_repos}")
+        print(f"No. of Currently Working Repositories  : {len(currently_working_repos)}")
+
+    return cloudformation_repos, terraform_repos, currently_working_repos, gha_repos
+
+def main():
+    """
+    Main entry point for processing repositories.
+
+    Parses command-line arguments, sets up debug output, and prepares input/output paths.
+    Performs initial validation and setup for further processing of repository data.
+    """
+    args = parse_args()
+
+    debug = getattr(args, "debug", False)
     debug = args.debug
+    output_dir = os.path.abspath(os.path.expanduser(args.output_dir))
 
-    args = parser.parse_args()
+    if not os.path.isdir(output_dir):
+        print(f"Output directory '{output_dir}' does not exist.", file=sys.stderr)
+        sys.exit(1)
+    try:
+        cloudformation_repo_path = Path(output_dir).expanduser().resolve() / "cloudformation-repos.json"
+        terraform_repo_path = Path(output_dir).expanduser().resolve() / "terraform-repos.json"
+        gha_repo_path = Path(output_dir).expanduser().resolve() / "gha-repos.json"
+        currently_working_repos_repo_path = Path(output_dir).expanduser().resolve() / "currently-working-repos.json"
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"Failed to load input JSON: {e}", file=sys.stderr)
+        sys.exit(1)
 
     if getattr(args, "debug", False):
         print("---------------------------------------------------------")
-        print(f"Organization    => {args.org}")
-        print(f"Output file    => {output_path}")
-        print(f"Debug          => {args.debug}")
-
+        print(f"Organization                     => {args.org}")
+        print(f"GitHub Action Organization       => {args.org}-gha")
+        print(f"Output Path                      => {output_dir}")
+        print(f"Debug                            => {args.debug}")
+        print(f"CloudFormation Repo Path         => {cloudformation_repo_path}")
+        print(f"Terraform Repo Path              => {terraform_repo_path}")
+        print(f"GitHub Action Repo Path          => {gha_repo_path}")
+        print(f"Currently Working Repos Path     => {currently_working_repos_repo_path}")
         print("---------------------------------------------------------")
 
-    # if not os.path.isfile(input_path):
-    #     print(f"Input file '{input_path}' does not exist.", file=sys.stderr)
-    #     sys.exit(1)
+    project_repositories = get_all_repositories(args.org, debug=debug)
+    print(f"Type of project_repositories: {type(project_repositories)}")
+    gha_repositories = get_all_repositories(f"{args.org}-gha", debug=debug)
+    print(f"Type of gha_repositories: {type(gha_repositories)}")
+    project_repositories.extend(gha_repositories)
+    print(f"Total number of repositories: {len(project_repositories)}")
 
-    # try:
-    #     input_path = Path(args.input).expanduser().resolve()
-    #     output_path = (
-    #         Path(args.output).expanduser().resolve() if args.output else input_path
-    #     )
-    #     items = load_json(input_path)
+    cloudformation_repos, terraform_repos, currently_working_repos, gha_repos = process_repositories(project_repositories, debug=debug)
 
-    # except (OSError, json.JSONDecodeError) as e:
-    #     print(f"Failed to load input JSON: {e}", file=sys.stderr)
-    #     sys.exit(1)
+    try:
+        with cloudformation_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(cloudformation_repos, f, indent=2)
+        print(f"CloudFormation Repo JSON written to {cloudformation_repo_path}")
+    except OSError as e:
+        print(f"Failed to write CloudFormation Repo JSON: {e}", file=sys.stderr)
 
-    # try:
-    #     if not isinstance(items, list):
-    #         raise ValueError("Input JSON must be an array of items.")
-    # except ValueError as e:
-    #     print(str(e), file=sys.stderr)
-    #     sys.exit(1)
+    try:
+        with terraform_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(terraform_repos, f, indent=2)
+        print(f"Terraform Repo JSON written to {terraform_repo_path}")
+    except OSError as e:
+        print(f"Failed to write Terraform Repo JSON: {e}", file=sys.stderr)
 
-    # session = requests.Session()
+    try:
+        with gha_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(gha_repos, f, indent=2)
+        print(f"GitHub Action Repo JSON written to {gha_repo_path}")
+    except OSError as e:
+        print(f"Failed to write GitHub Action Repo JSON: {e}", file=sys.stderr)
+
+    try:
+        with currently_working_repos_repo_path.open("w", encoding="utf-8") as f:
+            json.dump(currently_working_repos, f, indent=2)
+        print(f"Currently Working Repos JSON written to {currently_working_repos_repo_path}")
+    except OSError as e:
+        print(f"Failed to write Currently Working Repos JSON: {e}", file=sys.stderr)
 
 if __name__ == "__main__":
     main()

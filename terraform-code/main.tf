@@ -1,5 +1,5 @@
 resource "github_repository" "this" {
-  name        = "subhamay-profile"
+  name        = ".github"
   description = "A repository for subhamay's profile"
   visibility  = "public"
   auto_init   = true
@@ -22,19 +22,23 @@ data "github_user" "current" {
 
 resource "time_static" "this" {}
 
-data "github_rep"
 
 resource "github_repository_file" "readme" {
   repository          = github_repository.this.name
   branch              = "main"
-  file                = "README.md"
+  file                = "profile/README.md"
   overwrite_on_create = true
 
   content = templatefile("${path.module}/template/README.tftpl",
     {
-      avatar =  data.github_user.current.avatar_url
-      name   =  data.github_user.current.name
-      date   =  time_static.this.year
+      avatar     = data.github_user.current.avatar_url
+      name       = data.github_user.current.name
+      date       = time_static.this.year
+      time-stamp = time_static.this.rfc3339
+      gha-repos  = local.gha-repos
+      cfn-repos  = local.cloudformation-repos
+      tf-repos   = local.terraform-repos
+      curr-repos = local.currently-working-repos
     }
   )
 }

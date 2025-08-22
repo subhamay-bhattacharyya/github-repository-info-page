@@ -1,0 +1,1614 @@
+{
+  "TemplateRepository": [
+    {
+      "name": "terraform-template",
+      "description": "\ud83d\udcc4\ud83c\udfaf GitHub Repository Template for Terraform as IaC.",
+      "url": "https://github.com/subhamay-bhattacharyya/terraform-template",
+      "status": "https://img.shields.io/badge/-IN%20PROGRESS-yellow?style=flat&labelColor=00000000"
+    }
+  ],
+  "Bedrock": [
+    {
+      "name": "1101-bedrock-tf",
+      "description": "Text Generation with Amazon Bedrock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1101-bedrock-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1102-bedrock-tf",
+      "description": "Knowledge Bases and RAG using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1102-bedrock-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1103-bedrock-tf",
+      "description": "Model Customization using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1103-bedrock-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1104-bedrock-tf",
+      "description": "Image and Video Generation Applications using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1104-bedrock-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1105-bedrock-tf",
+      "description": "Agents using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1105-bedrock-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1701-bedrock-agent-tf",
+      "description": "Lab 1 - Create an Agent with Function Definition using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1701-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1702-bedrock-agent-tf",
+      "description": "Lab 2 - Create Agents with API Schema using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1702-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1703-bedrock-agent-tf",
+      "description": "Lab 3 - Create Agents with Return of Control (Function Calling) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1703-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1704-bedrock-agent-tf",
+      "description": "Lab 4 - Create Agent with a Single Knowledge Base using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1704-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1705-bedrock-agent-tf",
+      "description": "Lab 5 - Create an Agent with a Knowledge Base and an Action Group using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1705-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1706-bedrock-agent-tf",
+      "description": "Lab 6 - Passing Prompt and Session Attributes to your Agent using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1706-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1707-bedrock-agent-tf",
+      "description": "Lab 7 - Overwriting Advanced Prompt and Custom Lambda Parsers using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1707-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1708-bedrock-agent-tf",
+      "description": "Lab 8 - Creating Agent with Guardrails for Amazon Bedrock integration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1708-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1709-bedrock-agent-tf",
+      "description": "Lab 9 - Creating an agents with memory using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1709-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1710-bedrock-agent-tf",
+      "description": "Lab 10 - Creating an agent with code interpretation capabilities using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1710-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1711-bedrock-agent-tf",
+      "description": "Lab 11 - Creating Industry Specific Agents using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1711-bedrock-agent-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Step Function": [
+    {
+      "name": "1301-step-function-tf",
+      "description": "First state machine using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1301-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1302-step-function-tf",
+      "description": "Integrating services using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1302-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1303-step-function-tf",
+      "description": "Handling errors using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1303-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1304-step-function-tf",
+      "description": "Versions and Aliases using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1304-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1305-step-function-tf",
+      "description": "Optimizing costs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1305-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1306-step-function-tf",
+      "description": "Processing data in parallel using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1306-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1307-step-function-tf",
+      "description": "Processing arrays of data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1307-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1308-step-function-tf",
+      "description": "Creating state machines with IaC using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1308-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1309-step-function-tf",
+      "description": "Integrate with Amazon ECS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1309-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1310-step-function-tf",
+      "description": "Distributed map using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1310-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1311-step-function-tf",
+      "description": "Human approval using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1311-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1312-step-function-tf",
+      "description": "Wait for external system using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1312-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1313-step-function-tf",
+      "description": "External HTTP integration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1313-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1314-step-function-tf",
+      "description": "Integrate with Amazon Bedrock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1314-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1315-step-function-tf",
+      "description": "Saga Pattern using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1315-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1316-step-function-tf",
+      "description": "Product feedback processing using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1316-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1317-step-function-tf",
+      "description": "Language Detection and Translation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1317-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1318-step-function-tf",
+      "description": "Text Summarization using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1318-step-function-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Container": [
+    {
+      "name": "1001-container-tf",
+      "description": "Lab 1. Containerize the Mythical Mysfits monolith using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1001-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1002-container-tf",
+      "description": "Lab 2. Deploy the container using AWS Fargate using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1002-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1003-container-tf",
+      "description": "Lab 3. Scale the adoption platform monolith with an ALB and an ECS Service using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1003-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1004-container-tf",
+      "description": "Lab 4. Incrementally build and deploy more microservices with AWS Fargate using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1004-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1005-container-tf",
+      "description": "Lab 5. Launch your Amazon EKS Cluster using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1005-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1006-container-tf",
+      "description": "Lab 6. Preparing EKS for the Mysfits using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1006-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1007-container-tf",
+      "description": "Lab 7. Deploying the monolith using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1007-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1008-container-tf",
+      "description": "Lab 8. Incrementally build and deploy more microservices with EKS and AWS Load Balancer Controller using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1008-container-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Networking": [
+    {
+      "name": "0301-vpc-tf",
+      "description": "VPC Fundamentals using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0301-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0302-vpc-tf",
+      "description": "Multiple VPCs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0302-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0303-vpc-tf",
+      "description": "Security Controls using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0303-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0304-vpc-tf",
+      "description": "Connecting to On-Premises using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0304-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0305-vpc-tf",
+      "description": "Network Monitoring using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0305-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0306-vpc-tf",
+      "description": "AWS Gateway Load Balancer using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0306-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0307-vpc-tf",
+      "description": "Lab 1: Multicast in AWS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0307-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0308-vpc-tf",
+      "description": "Lab #1 - VPC Components Deep Dive using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0308-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0309-vpc-tf",
+      "description": "Lab #2 - Transit Gateway and Site-to-Site VPNs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0309-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0310-vpc-tf",
+      "description": "Lab #3 - Route53 DNS Endpoints and Internal Hosted Zones using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0310-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0311-vpc-tf",
+      "description": "Lab #4 - VPC Endpoints for AWS Services using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0311-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0312-vpc-tf",
+      "description": "Lab #5 - VPC Endpoint Services using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0312-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0313-vpc-tf",
+      "description": "Lab #6  VPC Peering using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0313-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0314-vpc-tf",
+      "description": "Lab #7 - Transit Gateway Network Manager using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0314-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1601-vpc-tf",
+      "description": "Module 1: Egress connectivity from an IPv6-only instance using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1601-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1602-vpc-tf",
+      "description": "Module 2: Ingress connectivity to IPv6-only instances using an NLB using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1602-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1603-vpc-tf",
+      "description": "Module 3: Private connectivity to IPv6 services using AWS PrivateLink using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1603-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1604-vpc-tf",
+      "description": "Module 4: IPv6 connectivity using AWS Transit Gateway using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1604-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1605-vpc-tf",
+      "description": "Module 5: Ingress connectivity to IPv6-only instances using ALB using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1605-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1606-vpc-tf",
+      "description": "Module 6: Understanding IPv6 on Amazon EKS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1606-vpc-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Kubernetes": [
+    {
+      "name": "1201-kubernetes-tf",
+      "description": "Karpenter using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1201-kubernetes-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1202-kubernetes-tf",
+      "description": "Scaling an application and cluster using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1202-kubernetes-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Highly Available Architecture": [
+    {
+      "name": "1401-highly-available-tf",
+      "description": "Highly Available Web Application Workshop using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1401-highly-available-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Event Bridge": [
+    {
+      "name": "1801-event-bridge-tf",
+      "description": "Event-driven with EventBridge using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1801-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1802-event-bridge-tf",
+      "description": "Event-driven with EventBridge using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1802-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1803-event-bridge-tf",
+      "description": "Using the schema registry using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1803-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1804-event-bridge-tf",
+      "description": "Archive and Replay using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1804-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1805-event-bridge-tf",
+      "description": "Global endpoints using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1805-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1806-event-bridge-tf",
+      "description": "Event-driven with Lambda using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1806-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1807-event-bridge-tf",
+      "description": "Event-driven with SNS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1807-event-bridge-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "No Category": [
+    {
+      "name": "0701-intelligence-dashboard-tf",
+      "description": "Cloud Intelligence Dashboards Framework using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0701-intelligence-dashboard-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1901-tagging-tf",
+      "description": "Managing tags using the console & AWS CLI using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1901-tagging-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1902-tagging-tf",
+      "description": "AWS Resource Groups using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1902-tagging-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1903-tagging-tf",
+      "description": "IaC & tagging using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1903-tagging-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1904-tagging-tf",
+      "description": "CI/CD & tagging using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1904-tagging-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1905-tagging-tf",
+      "description": "Tag Governance with AWS Config using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1905-tagging-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "1906-tagging-tf",
+      "description": "AWS Tag Policies using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/1906-tagging-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Elastic Map Reduce": [
+    {
+      "name": "2601-emr-tf",
+      "description": "Cluster Creation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2601-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2602-emr-tf",
+      "description": "Spark-based ETL using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2602-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2603-emr-tf",
+      "description": "Hive Workshop using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2603-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2604-emr-tf",
+      "description": "Presto Workshop using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2604-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2605-emr-tf",
+      "description": "EMR Managed Scaling using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2605-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2606-emr-tf",
+      "description": "Pig Workshop using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2606-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2607-emr-tf",
+      "description": "EMR Notebooks and SageMaker using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2607-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2608-emr-tf",
+      "description": "Hudi Workshop using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2608-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2609-emr-tf",
+      "description": "Orchestrating Amazon EMR with AWS StepFunctions using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2609-emr-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Redshift": [
+    {
+      "name": "2501-redshift-tf",
+      "description": "Getting Started using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2501-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2502-redshift-tf",
+      "description": "Table Design and Load using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2502-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2503-redshift-tf",
+      "description": "Ongoing Load - ELT using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2503-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2504-redshift-tf",
+      "description": "Data Sharing using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2504-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2505-redshift-tf",
+      "description": "Machine Learning - Redshift ML using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2505-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2506-redshift-tf",
+      "description": "Query Data Lake - Redshift Spectrum using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2506-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2507-redshift-tf",
+      "description": "Operations using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2507-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2508-redshift-tf",
+      "description": "Seamless Data Sharing Using Amazon Redshift using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2508-redshift-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Glue": [
+    {
+      "name": "0201-glue-tf",
+      "description": "Lab 01: Working with Glue Data Catalog using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0201-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0202-glue-tf",
+      "description": "Lab 02: Working with Apache Spark using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0202-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0203-glue-tf",
+      "description": "Lab 03: Working with Glue ETL using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0203-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0204-glue-tf",
+      "description": "Lab 04: Working with Glue Streaming using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0204-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0205-glue-tf",
+      "description": "Lab 05: Working with Glue Studio using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0205-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0206-glue-tf",
+      "description": "Lab 06: Monitoring, Troubleshooting and Scaling using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0206-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0207-glue-tf",
+      "description": "Lab 07: Glue Job Orchestration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0207-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0208-glue-tf",
+      "description": "Lab 08: CI/CD in AWS Glue using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0208-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0209-glue-tf",
+      "description": "Lab 09: Working with AWS Glue job bookmarks using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0209-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0210-glue-tf",
+      "description": "Lab 10: Working with AWS Glue Data Quality using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0210-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0211-glue-tf",
+      "description": "Lab 11: Working with Glue Databrew using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0211-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0212-glue-tf",
+      "description": "Legacy ETL to AWS Glue Migration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0212-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2301-glue-tf",
+      "description": "Glue Crawler using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2301-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2302-glue-tf",
+      "description": "Glue Studio - ETL using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2302-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2303-glue-tf",
+      "description": "Lab 3: Personal Identifiable Information (PII) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2303-glue-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Security Compliance": [
+    {
+      "name": "2401-security-tf",
+      "description": "Infrastructure Protection using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2401-security-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2402-security-tf",
+      "description": "data-protection using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2402-security-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2403-security-tf",
+      "description": "Security Assurance using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2403-security-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2404-security-tf",
+      "description": "Identity and Access Management using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2404-security-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2801-security-compliance-tf",
+      "description": "Automating Incident Response Workshop using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2801-security-compliance-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Migration": [
+    {
+      "name": "3201-migration-tf",
+      "description": "Discover using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3201-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3202-migration-tf",
+      "description": "Database Migration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3202-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3203-migration-tf",
+      "description": "Application Migration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3203-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3204-migration-tf",
+      "description": "Elastic Disaster Recovery using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3204-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3501-migration-tf",
+      "description": "Module 1: The Monolith using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3501-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3502-migration-tf",
+      "description": "Module 2: Replatforming using Modernization Pathways using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3502-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3503-migration-tf",
+      "description": "Module 3: Move to Managed Database using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3503-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3504-migration-tf",
+      "description": "Module 4: Preparing to implement the Strangler Fig pattern using Amazon API Gateway using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3504-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3505-migration-tf",
+      "description": "Module 5: Microservices using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3505-migration-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Generative AI": [
+    {
+      "name": "0801-gen-ai-tf",
+      "description": "Stream 1: Getting started with generative AI using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0801-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0802-gen-ai-tf",
+      "description": "Stream 2: Working with private documents using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0802-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0803-gen-ai-tf",
+      "description": "Stream 3: Working with image files using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0803-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0804-gen-ai-tf",
+      "description": "Stream 4: Working with video files using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0804-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0805-gen-ai-tf",
+      "description": "Stream 5: Working with audio files using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0805-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0806-gen-ai-tf",
+      "description": "Stream 6: Working with SQL database using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0806-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0807-gen-ai-tf",
+      "description": "Stream 7: Working with graphs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0807-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0808-gen-ai-tf",
+      "description": "Stream 8: Working with business intelligence using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0808-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0809-gen-ai-tf",
+      "description": "Stream 9: Working with logs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0809-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0810-gen-ai-tf",
+      "description": "Stream 10: Working with streaming data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0810-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0811-gen-ai-tf",
+      "description": "Stream 11: Working with CSV files using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0811-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0812-gen-ai-tf",
+      "description": "Stream 12: Working with forms using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0812-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0813-gen-ai-tf",
+      "description": "Stream 13: Working with code using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0813-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2101-gen-ai-tf",
+      "description": "Building a Serverless Text-to-Speech Application with Amazon Polly using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2101-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "2901-gen-ai-chatbot-tf",
+      "description": "Create a Serverless Chatbot Using Amazon Bedrock, Amazon Kendra, and Your Own Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/2901-gen-ai-chatbot-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3900-gen-ai-tf",
+      "description": "Module 1: Build an Agentic Chatbot using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3900-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3901-gen-ai-tf",
+      "description": "Module 2: Building an Agentic Workflow with Amazon Bedrock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3901-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3902-gen-ai-tf",
+      "description": "Module 3: Using 3rd Party Agentic Workflows using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3902-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3903-gen-ai-tf",
+      "description": "Module 4: Building an Agentic Workflow with SageMaker AI using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3903-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4001-gen-ai-tf",
+      "description": "Data Discovery using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4001-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4002-gen-ai-tf",
+      "description": "Product and Support Knowledge Base using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4002-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4003-gen-ai-tf",
+      "description": "Customer AI Agent using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4003-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4004-gen-ai-tf",
+      "description": "Advanced QuickSight using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4004-gen-ai-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4101-gen-ai-llm-tf",
+      "description": "Configure event producer for current application using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4101-gen-ai-llm-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4102-gen-ai-llm-tf",
+      "description": "Configure Amazon Bedrock Knowledge Base using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4102-gen-ai-llm-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4103-gen-ai-llm-tf",
+      "description": "Deploy a new Chatbot feature in the existing application using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4103-gen-ai-llm-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4104-gen-ai-llm-tf",
+      "description": "Optimize the Chat Function using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4104-gen-ai-llm-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Foundation": [
+    {
+      "name": "3101-foundation-tf",
+      "description": "AWS 101 Workshop - Creating a Web Application using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3101-foundation-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5001-disaster-recovery-tf",
+      "description": "Backup and Restore using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5001-disaster-recovery-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5002-disaster-recovery-tf",
+      "description": "Pilot Light using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5002-disaster-recovery-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5003-disaster-recovery-tf",
+      "description": "Warm Standby using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5003-disaster-recovery-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Athena": [
+    {
+      "name": "3801-athena-tf",
+      "description": "Athena Basics using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3801-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3802-athena-tf",
+      "description": "Athena Federation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3802-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3803-athena-tf",
+      "description": "User Defined Functions using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3803-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3804-athena-tf",
+      "description": "Custom Data Source Connector using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3804-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3805-athena-tf",
+      "description": "Text Analysis using UDF using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3805-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3806-athena-tf",
+      "description": "Machine Learning using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3806-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3807-athena-tf",
+      "description": "ACID Transactions with Iceberg using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3807-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3808-athena-tf",
+      "description": "Athena Spark using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3808-athena-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Data Lake": [
+    {
+      "name": "0901-datalake-tf",
+      "description": "Lab 1 \u2013 Discovering and Cataloging your Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0901-datalake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0902-datalake-tf",
+      "description": "Lab 2 - Exploring your Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0902-datalake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0903-datalake-tf",
+      "description": "Lab 3 \u2013 Transforming your Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0903-datalake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0904-datalake-tf",
+      "description": "Lab 4 \u2013 Enriching your Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0904-datalake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0905-datalake-tf",
+      "description": "Lab 5 \u2013 Visualizing your Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0905-datalake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4601-data-lake-tf",
+      "description": "Lab1: Data Ingestion & Storage using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4601-data-lake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4602-data-lake-tf",
+      "description": "Lab2: Data Cataloging and ETL using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4602-data-lake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4603-data-lake-tf",
+      "description": "Lab3: Data Analytics & Visualization using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4603-data-lake-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "API Gateway": [
+    {
+      "name": "4301-api-gateway-tf",
+      "description": "Introduction to Amazon API Gateway using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4301-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4302-api-gateway-tf",
+      "description": "API Gateway REST Integrations using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4302-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4303-api-gateway-tf",
+      "description": "API Gateway REST Integrations Mock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4303-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4304-api-gateway-tf",
+      "description": "API Gateway REST Integrations HTTP Integration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4304-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4305-api-gateway-tf",
+      "description": "API Gateway REST Integrations AWS Lambda using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4305-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4306-api-gateway-tf",
+      "description": "API Gateway REST Integrations AWS Step Functions using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4306-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4307-api-gateway-tf",
+      "description": "API Gateway REST Integrations Amazon SQS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4307-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4308-api-gateway-tf",
+      "description": "API Gateway REST Integrations Amazon SNS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4308-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4309-api-gateway-tf",
+      "description": "API Gateway REST Integrations Amazon Kinesis using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4309-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4310-api-gateway-tf",
+      "description": "API Gateway REST Integrations Amazon DynamoDB using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4310-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4311-api-gateway-tf",
+      "description": "API Gateway REST Integrations Amazon EventBridge using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4311-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4312-api-gateway-tf",
+      "description": "API Gateway REST Integrations Private Integration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4312-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4313-api-gateway-tf",
+      "description": "API Gateway REST Integrations Amazon S3 using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4313-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4314-api-gateway-tf",
+      "description": "Observability in API Gateway using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4314-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4315-api-gateway-tf",
+      "description": "WebSocket APIs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4315-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4316-api-gateway-tf",
+      "description": "Enable fine-grained access control for your APIs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4316-api-gateway-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Sagemaker": [
+    {
+      "name": "3601-sagemaker-tf",
+      "description": "Lakehouse using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3601-sagemaker-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3602-sagemaker-tf",
+      "description": "Catalog (Data & AI Governance) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3602-sagemaker-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3603-sagemaker-tf",
+      "description": "Data Processing using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3603-sagemaker-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3604-sagemaker-tf",
+      "description": "SQL Analytics using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3604-sagemaker-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3605-sagemaker-tf",
+      "description": "ML/GenAI Model Development using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3605-sagemaker-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "3606-sagemaker-tf",
+      "description": "Generative AI Application Development using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/3606-sagemaker-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "AWS Power Tools": [
+    {
+      "name": "4201-power-tools-tf",
+      "description": "Workshop - Module 1 using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4201-power-tools-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "4202-power-tools-tf",
+      "description": "Workshop - Module 2 using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/4202-power-tools-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Serverless Patterns": [
+    {
+      "name": "0601-serverless-tf",
+      "description": "M1 - Intro to Serverless using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0601-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0602-serverless-tf",
+      "description": "M2 - Synchronous Invocation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0602-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0603-serverless-tf",
+      "description": "M3 - Synchronous + Idempotence using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0603-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0604-serverless-tf",
+      "description": "M4 - Asynchronous Invocation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0604-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0605-serverless-tf",
+      "description": "M5 - Polling using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0605-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0606-serverless-tf",
+      "description": "M6 - Streaming Data using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0606-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0607-serverless-tf",
+      "description": "M7 - Streaming Datalake using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0607-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0608-serverless-tf",
+      "description": "M8 - Deployment Strategies using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0608-serverless-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5201-serverless-patterns-tf",
+      "description": "Simple CRUD API (HTTP \u2192 Lambda \u2192 DynamoDB) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5201-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5202-serverless-patterns-tf",
+      "description": "Authenticated CRUD API (Cognito-authorized) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5202-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5203-serverless-patterns-tf",
+      "description": "GraphQL API with Aurora Serverless using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5203-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5204-serverless-patterns-tf",
+      "description": "API Gateway \u2192 SQS (Async Ingestion) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5204-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5205-serverless-patterns-tf",
+      "description": "S3 Event-Driven ETL using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5205-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5206-serverless-patterns-tf",
+      "description": "S3 \u2192 Step Functions (Fan-out & Orchestration) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5206-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5207-serverless-patterns-tf",
+      "description": "Multipart Upload API using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5207-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5208-serverless-patterns-tf",
+      "description": "SNS Fan-out (Topic \u2192 Multiple Subscribers) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5208-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5209-serverless-patterns-tf",
+      "description": "Queue Worker (SQS \u2192 Lambda) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5209-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5210-serverless-patterns-tf",
+      "description": "Dead-Letter Handling Pipeline using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5210-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5211-serverless-patterns-tf",
+      "description": "Event Sourcing (DynamoDB Streams) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5211-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5212-serverless-patterns-tf",
+      "description": "Saga Orchestration (Step Functions) using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5212-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5213-serverless-patterns-tf",
+      "description": "Human-in-the-loop Approval using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5213-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5214-serverless-patterns-tf",
+      "description": "Batch/Periodic Jobs using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5214-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5215-serverless-patterns-tf",
+      "description": "Web/Mobile Notifications using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5215-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5216-serverless-patterns-tf",
+      "description": "Email/Webhook Processor using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5216-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5217-serverless-patterns-tf",
+      "description": "Change Data Capture to Search using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5217-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5218-serverless-patterns-tf",
+      "description": "Read-Through Cache for Aurora using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5218-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5219-serverless-patterns-tf",
+      "description": "Data Lake Landing \u2192 Curated using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5219-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5220-serverless-patterns-tf",
+      "description": "Cognito User Management Hooks using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5220-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5221-serverless-patterns-tf",
+      "description": "Fine-Grained Authorization using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5221-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5222-serverless-patterns-tf",
+      "description": "Order Intake & Validation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5222-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5223-serverless-patterns-tf",
+      "description": "Payment Orchestration using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5223-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5224-serverless-patterns-tf",
+      "description": "Receipt Generation & Storage using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5224-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5225-serverless-patterns-tf",
+      "description": "Media Transcode Pipeline using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5225-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5226-serverless-patterns-tf",
+      "description": "Lightweight Inference Endpoint using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5226-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5227-serverless-patterns-tf",
+      "description": "Idempotent Write-Behind using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5227-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5228-serverless-patterns-tf",
+      "description": "Outbox/Inbox Pattern using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5228-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5229-serverless-patterns-tf",
+      "description": "Dead-Simple Rate Limiting / Token Bucket using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5229-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5230-serverless-patterns-tf",
+      "description": "Blue/Green Read Model using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5230-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5231-serverless-patterns-tf",
+      "description": "Transaction-heavy Workflow using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5231-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5232-serverless-patterns-tf",
+      "description": "Hybrid NoSQL + SQL using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5232-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5233-serverless-patterns-tf",
+      "description": "Event Audit & Trace Correlation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5233-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5234-serverless-patterns-tf",
+      "description": "Automated PII Redaction on Ingest using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5234-serverless-patterns-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Data Engineering": [
+    {
+      "name": "5101-data-engineering-tf",
+      "description": "Lab: Real-Time Clickstream Anomaly Detection with Amazon Managed Service for Apache Flink using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5101-data-engineering-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5102-data-engineering-tf",
+      "description": "Lab: Ingestion with DMS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5102-data-engineering-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5103-data-engineering-tf",
+      "description": "Lab: Transforming data with Glue using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5103-data-engineering-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5104-data-engineering-tf",
+      "description": "Lab: Query and Visualize using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5104-data-engineering-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5105-data-engineering-tf",
+      "description": "Lab: Data Lake Automation using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5105-data-engineering-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "5106-data-engineering-tf",
+      "description": "Bonus Lab: Glue DataBrew using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/5106-data-engineering-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "General": [
+    {
+      "name": "0401-general-tf",
+      "description": "Compute - Amazon EC2 using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0401-general-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0402-general-tf",
+      "description": "Network - Amazon VPC using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0402-general-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0403-general-tf",
+      "description": "Security - AWS IAM & Config & CloudTrail using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0403-general-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0404-general-tf",
+      "description": "Monitoring - Amazon CloudWatch using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0404-general-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0405-general-tf",
+      "description": "Database - Amazon RDS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0405-general-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0406-general-tf",
+      "description": "Storage - Amazon S3 & EFS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0406-general-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Data Protection": [
+    {
+      "name": "0501-data-protection-tf",
+      "description": "Module 1: S3 Versioning using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0501-data-protection-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0502-data-protection-tf",
+      "description": "Module 2: S3 Object Lock using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0502-data-protection-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0503-data-protection-tf",
+      "description": "Module 3: S3 Replication using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0503-data-protection-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0504-data-protection-tf",
+      "description": "Module 4: S3 Multi-Region Access Points using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0504-data-protection-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0505-data-protection-tf",
+      "description": "Module 5: Cross-account S3 Replication and Multi-Region Access Points using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0505-data-protection-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ],
+  "Storage": [
+    {
+      "name": "0101-storage-tf",
+      "description": "S3 Security Best Practices using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0101-storage-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0102-storage-tf",
+      "description": "Storage Performance Lab using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0102-storage-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0103-storage-tf",
+      "description": "Migrating Data to AWS using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0103-storage-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    },
+    {
+      "name": "0104-storage-tf",
+      "description": "AWS Backup Lab using Terraform.",
+      "url": "https://github.com/subhamay-bhattacharyya/0104-storage-tf",
+      "status": "https://img.shields.io/badge/-NOT%20STARTED-grey?style=flat&labelColor=00000000"
+    }
+  ]
+}
