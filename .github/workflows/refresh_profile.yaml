@@ -19,7 +19,7 @@ permissions:
   contents: read
 
 jobs:
-  environment: ci
+
   refresh-profile:
     name: Refresh GitHub Profile
     runs-on: ubuntu-latest
@@ -60,7 +60,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: ${{ secrets.aws-role-arn }}
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Upload artifact
