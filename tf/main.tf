@@ -38,3 +38,23 @@ resource "github_repository_file" "readme" {
     }
   )
 }
+
+resource "github_repository_file" "jekyll_layout" {
+  repository          = github_repository.this.name
+  branch              = "main"
+  file                = "_layouts/default.html"
+
+  content = templatefile("${path.module}/template/jekyll_default.tftpl",
+    {
+      readme_content = github_repository_file.readme.content
+    }
+  )
+}
+
+resource "github_config_file" "jekyll_config" {
+  repository          = github_repository.this.name
+  branch              = "main"
+  file                = "_config.yaml"
+
+  content = templatefile("${path.module}/template/jekyll_config.tftpl", {})
+}
