@@ -1,6 +1,6 @@
 resource "github_repository" "this" {
   name        = ".github"
-  description = "A repository for subhamay's profile"
+  description = "A GitHub profile repository of Subhamay Bhattacharyya"
   visibility  = "public"
   auto_init   = true
 
@@ -9,10 +9,6 @@ resource "github_repository" "this" {
       branch = "main"
       path   = "/"
     }
-  }
-
-  provisioner "local-exec" {
-    command = "gh repo view subhamay-bhattacharyya/subhamay-profile --web"
   }
 }
 
@@ -41,4 +37,20 @@ resource "github_repository_file" "readme" {
       curr-repos = local.currently-working-repos
     }
   )
+}
+
+resource "github_repository_file" "jekyll_layout" {
+  repository = github_repository.this.name
+  branch     = "main"
+  file       = "_layouts/default.html"
+
+  content = templatefile("${path.module}/template/jekyll_default.tftpl", {})
+}
+
+resource "github_repository_file" "jekyll_config" {
+  repository = github_repository.this.name
+  branch     = "main"
+  file       = "_config.yaml"
+
+  content = templatefile("${path.module}/template/jekyll_config.tftpl", {})
 }

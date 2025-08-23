@@ -7,19 +7,26 @@ on:
       output-dir:
         description: 'Path to the output directory'
         required: true
-        default: 'terraform-code/all-repositories/'
+        default: 'tf/all-repositories/'
       debug:
         description: 'Enable debug output'
         required: false
         default: false
         type: boolean
 
+permissions:
+  id-token: write
+  contents: write
+  issues: write
+  pull-requests: write
+  repository-projects: write
+
 jobs:
   refresh-profile:
     name: Refresh GitHub Profile
     runs-on: ubuntu-latest
+    environment: "ci"
 
-    # Prevent overlapping runs of THIS workflow on the same branch
     concurrency:
       group: refresh-profile-${{ github.ref }}
       cancel-in-progress: false
@@ -47,12 +54,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_GIST_TOKEN }}
         working-directory: ${{ github.workspace }}
         run: |
-            python python-scripts/process_repositories.py \
+          python python-scripts/process_repositories.py \
             --org "${{ github.repository_owner }}" \
             --output-dir "${{ inputs.output-dir }}" \
             ${{ inputs.debug && '--debug' || '' }}
 
-      - name: Upload output files
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Upload artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: output-files
@@ -62,35 +76,41 @@ jobs:
         id: validate
         uses: subhamay-bhattacharyya-gha/tf-validate-action@main
         with:
-          terraform-dir: "terraform-code"   
+          terraform-dir: "tf"
+          s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+          s3-region: ${{ vars.AWS_REGION }}
+        env:
+          # IMPORTANT: give Terraform the org PAT
+          GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
+
+      - name: Run TFLint
+        uses: subhamay-bhattacharyya-gha/tf-lint-action@main
+        with:
+          tflint-ver: ${{ vars.TF_LINT_VER }}
+          use-cache: "true"
+          tflint-format: "compact"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
+
+      - name: Terraform Plan
+        id: plan
+        uses: subhamay-bhattacharyya-gha/tf-plan-action@main
+        with:
+          terraform-dir: "tf"
+          tf-vars-file: "terraform.tfvars"
+          s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
+          s3-region: ${{ vars.AWS_REGION }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
+
+      - name: Terraform Apply
+        id: apply
+        uses: subhamay-bhattacharyya-gha/tf-apply-action@main
+        with:
+          terraform-dir: "tf"
           s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
           s3-region: ${{ vars.AWS_REGION }}
           ci-pipeline: "false"
-          soft-fail: "true"             
-
-      # - name: Run TFLint
-      #   uses: subhamay-bhattacharyya-gha/tf-lint-action@main
-      #   with:
-      #     tflint-ver: ${{ vars.TF_LINT_VER }}
-      #     use-cache: "true"
-      #     tflint-format: "compact"
-
-      # - name: Terraform Plan
-      #   id: plan
-      #   uses: subhamay-bhattacharyya-gha/tf-plan-action@main
-      #   with:
-      #     terraform-dir: "terraform-code" 
-      #     # tf-vars-file: ${{ inputs.tf-vars-file }}
-      #     s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
-      #     s3-region: ${{ vars.AWS_REGION }}
-      #     ci-pipeline: ${{ inputs.ci-pipeline }}
-
-      # - name: Terraform Apply
-      #   uses: subhamay-bhattacharyya-gha/tf-apply-action@main
-      #   id: apply
-      #   with:
-      #     terraform-dir: "terraform-code"
-      #     s3-bucket: ${{ vars.TF_STATE_BUCKET_NAME }}
-      #     s3-region: ${{ vars.AWS_REGION }}
-      #     ci-pipeline: "false"
-                     
+        env:
+          # IMPORTANT: inputs != env. Use env for Terraform.
+          GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}

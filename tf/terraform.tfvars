@@ -1,0 +1,5 @@
+source-dir                        = "all-repositories"
+github-action-repos-json-file     = "gha-repos.json"
+cloudformation-repos-json-file    = "cloudformation-repos.json"
+terraform-repos-json-file         = "terraform-repos.json"
+currently-working-repos-json-file = "currently-working-repos.json"
