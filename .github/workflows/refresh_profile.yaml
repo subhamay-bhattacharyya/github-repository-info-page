@@ -103,6 +103,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
 
+      - name: Sanity check GH_ORG_TOKEN is present
+        run: |
+          set -e
+          if [ -z "${GH_ORG_TOKEN:-}" ]; then
+            echo "❌ GH_ORG_TOKEN is empty or not set"; exit 1
+          fi
+          # Count characters (helps catch copy/paste/newline issues)
+          echo "GH_ORG_TOKEN length: $(printf %s "$GH_ORG_TOKEN" | wc -c)"
+        env:
+          GH_ORG_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
+
       - name: Minimal create repo API test (creates then deletes)
         run: |
           set -e
