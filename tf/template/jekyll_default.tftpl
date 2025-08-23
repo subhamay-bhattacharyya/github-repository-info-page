@@ -232,23 +232,5 @@
     </div>
   </footer>
 
-  <!-- Build a simple TOC after content is in the DOM -->
-  <script>
-    (function(){
-      const tocRoot = document.getElementById('toc');
-      if (!tocRoot) return;
-      const headers = document.querySelectorAll('#content h2');
-      if (!headers.length){ tocRoot.innerHTML = '<div class="muted">—</div>'; return; }
-      const ul = document.createElement('ul');
-      ul.style.listStyle='none'; ul.style.padding='0'; ul.style.margin='0';
-      headers.forEach((h,i)=>{
-        if(!h.id){ h.id = 'section-' + (i+1); }
-        const li = document.createElement('li');
-        li.innerHTML = `<a class="side-link" href="#${h.id}">${h.textContent}</a>`;
-        ul.appendChild(li);
-      });
-      tocRoot.appendChild(ul);
-    })();
-  </script>
 </body>
 </html>
