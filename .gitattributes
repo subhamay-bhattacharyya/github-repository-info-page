@@ -1,0 +1,77 @@
+# -------------------------------
+# CloudFormation / IaC templates
+# -------------------------------
+# Treat CFN/SAM templates as YAML so they don't get miscounted
+*.yaml linguist-language=YAML
+*.yml  linguist-language=YAML
+
+# ---------------------------------
+# HCL / Terraform configuration
+# ---------------------------------
+*.tf    linguist-language=HCL
+*.tfvars linguist-language=HCL
+*.hcl   linguist-language=HCL
+
+# Common CFN extensions/names → YAML
+*.cfn.yaml   linguist-language=YAML
+*.template   linguist-language=YAML
+template.yaml linguist-language=YAML
+template.yml  linguist-language=YAML
+samconfig.toml linguist-detectable=false   # config, not source
+
+# If you keep giant parameter/policy blobs, don’t let them skew stats
+policies/*.json    linguist-detectable=false
+parameters/*.json  linguist-detectable=false
+
+# TaskCat, cfn-guard rules, etc. (configs; keep detectable if you want)
+.taskcat.yml linguist-language=YAML
+cfn-guard/** linguist-detectable=false
+
+# ---------------------------------
+# Application code (Lambda / App)
+# ---------------------------------
+# Python (keep counted)
+*.py linguist-detectable=true
+
+# Node.js (keep counted)
+*.js linguist-detectable=true
+*.ts linguist-detectable=true
+
+# ---------------------------------
+# Vendored & generated stuff
+# ---------------------------------
+# Node dependencies and lockfiles
+node_modules/** linguist-vendored
+package-lock.json linguist-generated=true
+pnpm-lock.yaml     linguist-generated=true
+yarn.lock          linguist-generated=true
+
+# Python envs & packaging
+.venv/**        linguist-vendored
+venv/**         linguist-vendored
+dist/**         linguist-generated
+build/**        linguist-generated
+site/**         linguist-generated  # docs builds (MkDocs/Jekyll)
+
+# Frontend/artifact directories (if any)
+public/**       linguist-generated
+coverage/**     linguist-generated
+
+# Minified / compiled assets
+*.min.js        linguist-generated
+*.map           linguist-generated
+*.wasm          linguist-generated
+
+# ---------------------------------
+# Docs & miscellaneous
+# ---------------------------------
+# Keep Markdown detectable (docs can be useful to show)
+# *.md linguist-detectable=true
+
+# Large data samples & snapshots
+data/**         linguist-detectable=false
+test-data/**    linguist-detectable=false
+
+# GitHub workflows (YAML; small impact either way)
+.github/**      linguist-detectable=false
+.github/workflows/** linguist-detectable=true linguist-language=YAML
