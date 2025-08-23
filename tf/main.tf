@@ -10,10 +10,6 @@ resource "github_repository" "this" {
       path   = "/"
     }
   }
-
-  provisioner "local-exec" {
-    command = "gh repo view subhamay-bhattacharyya/subhamay-profile --web"
-  }
 }
 
 data "github_user" "current" {
