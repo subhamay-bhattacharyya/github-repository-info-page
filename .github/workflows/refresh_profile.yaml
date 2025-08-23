@@ -103,37 +103,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
 
-      - name: Sanity check GH_ORG_TOKEN is present
-        run: |
-          set -e
-          if [ -z "${GH_ORG_TOKEN:-}" ]; then
-            echo "❌ GH_ORG_TOKEN is empty or not set"; exit 1
-          fi
-          # Count characters (helps catch copy/paste/newline issues)
-          echo "GH_ORG_TOKEN length: $(printf %s "$GH_ORG_TOKEN" | wc -c)"
-        env:
-          GH_ORG_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
-
-      - name: Minimal create repo API test (creates then deletes)
-        run: |
-          set -e
-          body='{"name":"pat-repo-test","private":true}'
-          # create
-          curl -s -X POST \
-            -H "Authorization: Bearer $GH_ORG_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/orgs/subhamay-bhattacharyya/repos \
-            -d "$body" | jq .
-          # delete
-          curl -s -X DELETE \
-            -H "Authorization: Bearer $GH_ORG_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            https://api.github.com/repos/subhamay-bhattacharyya/pat-repo-test
-        env:
-          GH_ORG_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
-
       - name: Terraform Apply
         id: apply
         uses: subhamay-bhattacharyya-gha/tf-apply-action@main
