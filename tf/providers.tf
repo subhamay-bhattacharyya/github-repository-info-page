@@ -14,4 +14,5 @@ terraform {
 
 provider "github" {
   owner = "subhamay-bhattacharyya"
+  token = var.github_token
 }
