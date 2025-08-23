@@ -110,5 +110,5 @@ jobs:
           s3-region: ${{ vars.AWS_REGION }}
           ci-pipeline: "false"
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_ORG_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
                      

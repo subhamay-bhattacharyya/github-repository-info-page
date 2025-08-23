@@ -1,7 +1,7 @@
-variable "github_token" {
-  type      = string
-  sensitive = true
-}
+# variable "github_token" {
+#   type      = string
+#   sensitive = true
+# }
 
 variable "source-dir" {
   description = "The source directory for the Terraform configuration files"
